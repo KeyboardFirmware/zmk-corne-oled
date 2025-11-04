@@ -45,8 +45,8 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-space$$', h: number, type: held}
-  - {t: '$$mdi:keyboard-return$$', h: function, type: held}
+  - {t: '$$mdi:keyboard-space$$', h: number}
+  - {t: '$$mdi:keyboard-return$$', h: function}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-option$$
   number:
@@ -192,10 +192,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
 combos:
 - p: [44, 45]
-  k: qwerty
+  k: admin
