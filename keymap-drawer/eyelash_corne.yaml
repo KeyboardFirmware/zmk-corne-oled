@@ -50,29 +50,29 @@ layers:
   - {t: RIGHT GUI, h: function}
   - $$mdi:apple-keyboard-option$$
   number:
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '`', s: '~'}
   - F1
   - F2
   - F3
   - F4
-  - (
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - )
+  - {t: \, s: '|'}
   - {t: '1', s: '!'}
   - {t: '2', s: '@'}
   - {t: '3', s: '#'}
   - {t: '4', s: $}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - F5
   - F6
   - F7
   - F8
-  - '{'
+  - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '}'
+  - {t: ']', s: '}'}
   - {t: '5', s: '%'}
   - {t: '6', s: ^}
   - {t: '7', s: '&'}
@@ -83,10 +83,10 @@ layers:
   - F10
   - F11
   - F12
-  - {t: '[', s: '{'}
+  - {t: ',', s: <}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: ']', s: '}'}
+  - .
   - {t: '9', s: (}
   - {t: '0', s: )}
   - {t: '-', s: _}
@@ -100,28 +100,28 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   function:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgUp
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '"'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '!'
   - '@'
   - '#'
   - $
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - '%'
   - ^
   - '&'
@@ -132,10 +132,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: \, s: '|'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '|'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - (
   - )
   - _
