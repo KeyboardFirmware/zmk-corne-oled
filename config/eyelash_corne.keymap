@@ -74,10 +74,10 @@
 
         layer_1 {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &kp LEFT_PARENTHESIS                    &trans          &kp RIGHT_PARENTHESIS  &kp N1  &kp N2  &kp N3     &kp N4     &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACE                  &trans  &trans  &trans  &kp RIGHT_BRACE        &kp N5  &kp N6  &kp N7     &kp N8     &trans
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &kp LEFT_BRACKET      &trans            &trans          &kp RIGHT_BRACKET      &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &trans
-                         &trans   &trans   &trans                                                  &trans                 &trans  &trans
+&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4   &kp SINGLE_QUOTE                    &trans          &kp BACKSLASH      &kp N1  &kp N2  &kp N3     &kp N4     &kp DEL
+&trans     &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACKET            &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp N5  &kp N6  &kp N7     &kp N8     &trans
+&trans     &kp F9  &kp F10  &kp F11  &kp F12  &kp COMMA         &trans            &trans          &kp PERIOD         &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &trans
+                            &trans   &trans   &trans                                              &trans             &trans  &trans
             >;
 
             label = "number";
@@ -85,10 +85,10 @@
 
         layer_2 {
             bindings = <
-&trans  &none  &kp HOME  &kp UP    &kp END    &kp SINGLE_QUOTE                    &trans          &kp DOUBLE_QUOTES  &kp EXCLAMATION       &kp AT_SIGN            &kp POUND       &kp DOLLAR    &trans
-&trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &kp GRAVE                   &trans  &trans  &trans  &kp TILDE          &kp PERCENT           &kp CARET              &kp AMPERSAND   &kp ASTERISK  &trans
-&trans  &none  &none     &none     &none      &kp BACKSLASH     &trans            &trans          &kp PIPE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS      &trans
-                         &trans    &trans     &trans                                              &trans             &trans                &trans
+&trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &trans                    &trans          &trans  &kp EXCLAMATION       &kp AT_SIGN            &kp POUND       &kp DOLLAR    &trans
+&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans  &kp PERCENT           &kp CARET              &kp AMPERSAND   &kp ASTERISK  &trans
+&trans  &none          &none     &none     &none      &trans  &trans            &trans          &trans  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS      &trans
+                                 &trans    &trans     &trans                                    &trans  &trans                &trans
             >;
 
             label = "function";
