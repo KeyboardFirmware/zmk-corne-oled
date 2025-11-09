@@ -27,7 +27,7 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <350>;
+    tapping-term-ms = <400>;
 };
 
 / {
@@ -48,12 +48,70 @@
         tap-ms = <100>;
     };
 
+    bsp_del: bsp_del {
+        compatible = "zmk,behavior-mod-morph";
+        label = "BSP_DEL";
+        bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    esc_tilde: esc_tilde {
+        compatible = "zmk,behavior-mod-morph";
+        label = "ESC_TILDE";
+        bindings = <&kp ESCAPE>, <&kp TILDE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT)>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
-        layer_3 {
-            bindings = <&mo 3>;
-            key-positions = <44 45>;
+        a {
+            bindings = <&kp LEFT_BRACE>;
+            key-positions = <4 3>;
+        };
+
+        b {
+            bindings = <&kp RIGHT_BRACE>;
+            key-positions = <9 8>;
+        };
+
+        c {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <16 17>;
+        };
+
+        d {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <23 24>;
+        };
+
+        e {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <32 31>;
+        };
+
+        f {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <37 38>;
+        };
+
+        g {
+            bindings = <&kp LESS_THAN>;
+            key-positions = <14 15>;
+        };
+
+        h {
+            bindings = <&kp GREATER_THAN>;
+            key-positions = <26 25>;
+        };
+
+        i {
+            bindings = <&soft_off>;
+            key-positions = <5 44 7 45>;
         };
     };
 
@@ -61,12 +119,12 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "qwerty";
+            display-name = "abc";
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E     &kp R      &kp T                           &kp UP                &kp Y        &kp U            &kp I      &kp O    &kp P     &kp BSPC
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D     &kp F      &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J            &kp K      &kp L    &kp SEMI  &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z  &kp X  &kp C     &kp V      &kp B        &none              &kp DOWN              &kp N        &kp M            &kp COMMA  &kp DOT  &kp FSLH  &kp RIGHT_CONTROL
-                                &kp LALT  &lt 2 TAB  &lt 1 SPACE                                           &lt 1 ENTER  &lt 2 RIGHT_GUI  &kp RALT
+&kp ESC    &kp Q       &kp W               &kp E           &kp R             &kp T                           &kp UP                &kp Y        &kp U              &kp I            &kp O                &kp P                    &bsp_del
+&kp TAB    &mt RGUI A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt K_CONTEXT_MENU SEMI  &kp SQT
+&kp GRAVE  &kp Z       &kp X               &kp C           &kp V             &kp B        &none              &kp DOWN              &kp N        &kp M              &kp COMMA        &kp DOT              &kp FSLH                 &kp BACKSLASH
+                                           &mo 3           &mo 2             &lt 1 SPACE                                           &lt 1 ENTER  &mo 2              &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -74,35 +132,35 @@
 
         layer_1 {
             bindings = <
-&kp GRAVE  &kp F1  &kp F2   &kp F3   &kp F4   &kp SINGLE_QUOTE                    &trans          &kp BACKSLASH      &kp N1  &kp N2  &kp N3     &kp N4     &kp DEL
-&trans     &kp F5  &kp F6   &kp F7   &kp F8   &kp LEFT_BRACKET            &trans  &trans  &trans  &kp RIGHT_BRACKET  &kp N5  &kp N6  &kp N7     &kp N8     &trans
-&trans     &kp F9  &kp F10  &kp F11  &kp F12  &kp COMMA         &trans            &trans          &kp PERIOD         &kp N9  &kp N0  &kp MINUS  &kp EQUAL  &trans
-                            &trans   &trans   &trans                                              &trans             &trans  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans                    &trans          &trans  &kp N7  &kp N8  &kp N9  &kp N0     &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans            &trans  &trans  &trans  &trans  &kp N4  &kp N5  &kp N6  &kp MINUS  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans  &trans            &trans          &trans  &kp N1  &kp N2  &kp N3  &kp EQUAL  &trans
+                         &trans   &trans   &trans                                    &trans  &trans  &trans
             >;
 
-            label = "number";
+            label = "num";
         };
 
         layer_2 {
             bindings = <
-&kp TILDE  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &kp DOUBLE_QUOTES                    &trans          &kp PIPE          &kp EXCLAMATION       &kp AT_SIGN            &kp POUND       &kp DOLLAR    &trans
-&trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &kp LEFT_BRACE               &trans  &trans  &trans  &kp RIGHT_BRACE   &kp PERCENT           &kp CARET              &kp AMPERSAND   &kp ASTERISK  &trans
-&trans     &none          &none     &none     &none      &kp LESS_THAN      &trans            &trans          &kp GREATER_THAN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE  &kp PLUS      &trans
-                                    &trans    &trans     &trans                                               &trans            &trans                &trans
+&trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &trans                    &trans          &kp AT_SIGN  &kp EXCLAMATION  &kp EQUAL  &kp UNDERSCORE  &kp PERCENT   &trans
+&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &kp DOLLAR   &kp AMPERSAND    &kp PLUS   &kp MINUS       &kp ASTERISK  &trans
+&trans  &trans         &trans    &trans    &trans     &trans  &trans            &trans          &kp POUND    &kp PIPE         &kp COMMA  &kp PERIOD      &kp SLASH     &trans
+                                 &trans    &trans     &trans                                    &trans       &trans           &trans
             >;
 
-            label = "function";
+            label = "sym";
         };
 
         layer_3 {
             bindings = <
-&bootloader  &sys_reset  &none  &none  &none           &bt BT_SEL 1                  &none         &rgb_ug RGB_BRD                 &rgb_ug RGB_BRI  &none  &none  &sys_reset  &bootloader
-&none        &none       &none  &none  &none           &bt BT_SEL 2           &none  &none  &none  &rgb_ug RGB_EFR                 &rgb_ug RGB_EFF  &none  &none  &none       &none
-&none        &none       &none  &none  &bt BT_CLR_ALL  &bt BT_SEL 3  &none           &none         &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &none  &none  &none       &none
-                                &none  &none           &none                                       &none                           &none            &none
+&bootloader  &trans  &trans  &trans  &trans          &bt BT_SEL 0                    &trans          &rgb_ug RGB_BRI                 &trans           &trans  &trans  &trans  &bootloader
+&trans       &trans  &trans  &trans  &trans          &bt BT_SEL 1            &trans  &trans  &trans  &rgb_ug RGB_BRD                 &trans           &trans  &trans  &trans  &trans
+&trans       &trans  &trans  &trans  &bt BT_CLR_ALL  &bt BT_SEL 2  &trans            &trans          &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans
+                             &trans  &trans          &trans                                          &trans                          &trans           &trans
             >;
 
-            label = "admin";
+            label = "adm";
         };
     };
 };
