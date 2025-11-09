@@ -48,6 +48,15 @@
         tap-ms = <100>;
     };
 
+    bsp_del: bsp_del {
+        compatible = "zmk,behavior-mod-morph";
+        label = "BSP_DEL";
+        bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -98,7 +107,7 @@
         default_layer {
             display-name = "qwerty";
             bindings = <
-&kp ESC    &kp Q           &kp W               &kp E           &kp R             &kp T                           &kp UP                &kp Y        &kp U              &kp I            &kp O                &kp P                    &kp BSPC
+&kp ESC    &kp Q           &kp W               &kp E           &kp R             &kp T                           &kp UP                &kp Y        &kp U              &kp I            &kp O                &kp P                    &bsp_del
 &kp TAB    &mt LEFT_GUI A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                 &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt K_CONTEXT_MENU SEMI  &kp SQT
 &kp GRAVE  &kp Z           &kp X               &kp C           &kp V             &kp B        &none              &kp DOWN              &kp N        &kp M              &kp COMMA        &kp DOT              &kp FSLH                 &kp BACKSLASH
                                                &mo 3           &mo 2             &lt 1 SPACE                                           &lt 1 ENTER  &mo 2              &mo 3
@@ -121,7 +130,7 @@
         layer_2 {
             bindings = <
 &trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &trans                    &trans          &kp AT_SIGN  &kp EXCLAMATION  &kp UNDERSCORE  &kp EQUAL   &kp PERCENT   &trans
-&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &kp HASH     &kp AMPERSAND    &kp MINUS       &kp PLUS    &kp ASTERISK  &trans
+&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &kp HASH     &kp AMPERSAND    &kp MINUS       &kp PLUS    &kp ASTERISK  &kp SQT
 &trans  &trans         &trans    &trans    &trans     &trans  &trans            &trans          &kp DOLLAR   &kp PIPE         &kp COMMA       &kp PERIOD  &kp SLASH     &trans
                                  &trans    &trans     &trans                                    &trans       &trans           &trans
             >;
