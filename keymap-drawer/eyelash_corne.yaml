@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  qwerty:
-  - $$mdi:keyboard-esc$$
+  abc:
+  - {t: '$$mdi:keyboard-esc$$', s: '`'}
   - Q
   - W
   - E
@@ -15,7 +15,7 @@ layers:
   - P
   - {t: '$$mdi:backspace$$', s: '$$mdi:backspace-reverse-outline$$'}
   - $$mdi:keyboard-tab$$
-  - {t: A, h: '$$mdi:apple-keyboard-command$$'}
+  - {t: A, h: RGUI}
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
@@ -43,12 +43,12 @@ layers:
   - {t: ., s: '>'}
   - {t: /, s: '?'}
   - {t: \, s: '|'}
-  - '3'
-  - '2'
+  - adm
+  - sym
   - {t: '$$mdi:keyboard-space$$', h: num}
   - {t: '$$mdi:keyboard-return$$', h: num}
-  - '2'
-  - '3'
+  - sym
+  - adm
   num:
   - {t: '$$mdi:transfer$$', type: trans}
   - F9
@@ -98,7 +98,7 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  '2':
+  sym:
   - {t: '$$mdi:transfer$$', type: trans}
   - PgUp
   - HOME
@@ -147,7 +147,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
-  '3':
+  adm:
   - $$mdi:progress-download$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
