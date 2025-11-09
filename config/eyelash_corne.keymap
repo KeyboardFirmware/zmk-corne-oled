@@ -99,6 +99,11 @@
             bindings = <&kp GREATER_THAN>;
             key-positions = <26 25>;
         };
+
+        i {
+            bindings = <&soft_off>;
+            key-positions = <5 44 7 45>;
+        };
     };
 
     keymap {
