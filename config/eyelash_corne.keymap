@@ -67,7 +67,7 @@
 
         b {
             bindings = <&kp RIGHT_BRACE>;
-            key-positions = <7 8>;
+            key-positions = <9 8>;
         };
 
         c {
