@@ -134,9 +134,9 @@
 
         layer_2 {
             bindings = <
-&trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &trans                    &trans          &kp AT_SIGN  &kp EXCLAMATION  &kp UNDERSCORE  &kp EQUAL   &kp PERCENT   &trans
-&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &kp HASH     &kp AMPERSAND    &kp MINUS       &kp PLUS    &kp ASTERISK  &kp SQT
-&trans  &trans         &trans    &trans    &trans     &trans  &trans            &trans          &kp DOLLAR   &kp PIPE         &kp COMMA       &kp PERIOD  &kp SLASH     &trans
+&trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &trans                    &trans          &kp AT_SIGN  &kp EXCLAMATION  &kp EQUAL  &kp UNDERSCORE  &kp PERCENT   &trans
+&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &kp DOLLAR   &kp AMPERSAND    &kp PLUS   &kp MINUS       &kp ASTERISK  &trans
+&trans  &trans         &trans    &trans    &trans     &trans  &trans            &trans          &kp POUND    &kp PIPE         &kp COMMA  &kp PERIOD      &kp SLASH     &trans
                                  &trans    &trans     &trans                                    &trans       &trans           &trans
             >;
         };
