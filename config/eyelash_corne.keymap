@@ -110,10 +110,10 @@
 
         layer_2 {
             bindings = <
-&trans  &trans  &kp HOME  &kp UP    &kp END    &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans    &trans    &trans     &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                          &trans    &trans     &trans                                    &trans  &trans  &trans
+&trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &trans                    &trans          &trans  &kp EQUAL     &kp LS(UNDER)  &kp COMMA     &kp DOT   &trans
+&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans  &kp LS(PLUS)  &kp MINUS      &kp LS(STAR)  &kp FSLH  &trans
+&trans  &trans         &trans    &trans    &trans     &trans  &trans            &trans          &trans  &trans        &trans         &trans        &trans    &trans
+                                 &trans    &trans     &trans                                    &trans  &trans        &trans
             >;
         };
 
