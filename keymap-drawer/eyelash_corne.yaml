@@ -51,11 +51,11 @@ layers:
   - adm
   num:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '%'
-  - +
-  - {t: '-', s: _}
-  - '*'
   - {t: /, s: '?'}
+  - '*'
+  - {t: '-', s: _}
+  - +
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '1', s: '!'}
@@ -64,11 +64,11 @@ layers:
   - '0'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $
-  - {t: '=', s: +}
-  - _
-  - '!'
   - '#'
+  - '!'
+  - _
+  - {t: '=', s: +}
+  - $
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -80,9 +80,9 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '@'
-  - '&'
-  - '|'
   - ^
+  - '|'
+  - '&'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
