@@ -549,12 +549,12 @@ rect.held, rect.combo.held {
 <text x="756" y="132" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-6">
-<rect rx="6" ry="6" x="98" y="85" width="28" height="26" class="combo"/>
-<text x="112" y="98" class="combo tap">&lt;</text>
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="87" class="combo tap">&lt;</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="854" y="85" width="28" height="26" class="combo"/>
-<text x="868" y="98" class="combo tap">&gt;</text>
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<text x="812" y="87" class="combo tap">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <path d="M490,133 l-165,-83" class="combo"/>
