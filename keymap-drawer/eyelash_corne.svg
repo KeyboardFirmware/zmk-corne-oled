@@ -555,22 +555,22 @@ rect.held, rect.combo.held {
 <text x="756" y="87" class="combo tap">)</text>
 </g>
 <g class="combo combopos-4">
-<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
-<text x="168" y="31" class="combo tap">[</text>
-<text x="168" y="20" class="combo shifted">{</text>
+<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
+<text x="168" y="87" class="combo tap">[</text>
+<text x="168" y="76" class="combo shifted">{</text>
 </g>
 <g class="combo combopos-5">
-<rect rx="6" ry="6" x="798" y="18" width="28" height="26" class="combo"/>
-<text x="812" y="31" class="combo tap">]</text>
-<text x="812" y="20" class="combo shifted">}</text>
+<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
+<text x="812" y="87" class="combo tap">]</text>
+<text x="812" y="76" class="combo shifted">}</text>
 </g>
 <g class="combo combopos-6">
-<rect rx="6" ry="6" x="154" y="74" width="28" height="26" class="combo"/>
-<text x="168" y="87" class="combo tap">&lt;</text>
+<rect rx="6" ry="6" x="154" y="18" width="28" height="26" class="combo"/>
+<text x="168" y="31" class="combo tap">&lt;</text>
 </g>
 <g class="combo combopos-7">
-<rect rx="6" ry="6" x="798" y="74" width="28" height="26" class="combo"/>
-<text x="812" y="87" class="combo tap">&gt;</text>
+<rect rx="6" ry="6" x="798" y="18" width="28" height="26" class="combo"/>
+<text x="812" y="31" class="combo tap">&gt;</text>
 </g>
 <g class="combo combopos-8">
 <path d="M490,133 l-165,-83" class="combo"/>
