@@ -84,25 +84,25 @@
 
         e {
             bindings = <&kp LEFT_BRACKET>;
-            key-positions = <2 3>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         f {
             bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <9 10>;
+            key-positions = <24 25>;
             layers = <0>;
         };
 
         g {
             bindings = <&kp LESS_THAN>;
-            key-positions = <15 16>;
+            key-positions = <2 3>;
             layers = <0>;
         };
 
         h {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <25 24>;
+            key-positions = <9 10>;
             layers = <0>;
         };
 
