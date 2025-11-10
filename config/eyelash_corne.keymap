@@ -121,7 +121,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default_layer {
+        default {
             display-name = "abc";
             bindings = <
 &kp ESC    &kp Q       &kp W               &kp E           &kp R             &kp T                                 &msc SCRL_UP                     &kp Y        &kp U              &kp I            &kp O                &kp P                    &bsp_del
@@ -133,29 +133,29 @@
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        layer_1 {
+        number {
             bindings = <
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none                     &trans          &kp KP_NUMBER_0  &kp N1  &kp N2  &kp N3  &kp UNDERSCORE  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none             &trans  &trans  &trans  &kp KP_NUMBER_0  &kp N4  &kp N5  &kp N6  &kp EQUAL       &trans
-&none   &kp F9  &kp F10  &kp F11  &kp F12  &none   &trans            &trans          &kp KP_NUMBER_0  &kp N7  &kp N8  &kp N9  &kp N0          &none
-                         &trans   &trans   &trans                                    &trans           &trans  &trans
+&trans  &kp PERCENT  &kp PLUS       &kp MINUS       &kp ASTERISK     &kp SLASH                    &trans          &none   &kp N1  &kp N2  &kp N3  &kp NUMBER_0  &trans
+&trans  &kp DOLLAR   &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION  &kp POUND            &trans  &trans  &trans  &none   &kp N4  &kp N5  &kp N6  &kp NUMBER_0  &trans
+&none   &kp AT_SIGN  &kp AMPERSAND  &kp PIPE        &kp CARET        &none      &trans            &trans          &none   &kp N7  &kp N8  &kp N9  &kp NUMBER_0  &none
+                                    &trans          &trans           &trans                                       &trans  &trans  &trans
             >;
 
             label = "num";
         };
 
-        layer_2 {
+        navigation {
             bindings = <
-&trans  &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &none                     &trans          &none   &kp EXCLAMATION  &kp AT_SIGN   &kp HASH              &kp MINUS              &trans
-&trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &none             &trans  &trans  &trans  &none   &kp DOLLAR       &kp PERCENT   &kp CARET             &kp PLUS               &trans
-&none   &kp PRINTSCREEN  &none     &none     &none      &none   &trans            &trans          &none   &kp AMPERSAND    &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none
-                                   &trans    &trans     &trans                                    &trans  &trans           &trans
+&trans  &kp PG_UP        &kp HOME  &kp UP    &kp END    &trans                    &trans          &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans  &kp PG_DN        &kp LEFT  &kp DOWN  &kp RIGHT  &trans            &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans  &kp PRINTSCREEN  &trans    &trans    &trans     &trans  &trans            &trans          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                                   &trans    &trans     &trans                                    &trans  &trans  &trans
             >;
 
-            label = "sym";
+            label = "nav";
         };
 
-        layer_3 {
+        admin {
             bindings = <
 &bootloader  &trans  &trans  &trans  &trans          &bt BT_SEL 0                    &trans          &rgb_ug RGB_BRI                 &trans           &trans  &trans  &trans  &bootloader
 &trans       &trans  &trans  &trans  &trans          &bt BT_SEL 1            &trans  &trans  &trans  &rgb_ug RGB_BRD                 &trans           &trans  &trans  &trans  &trans
