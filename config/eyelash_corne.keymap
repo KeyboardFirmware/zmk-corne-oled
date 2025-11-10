@@ -105,13 +105,13 @@
 
         g {
             bindings = <&kp LESS_THAN>;
-            key-positions = <14 15>;
+            key-positions = <15 16>;
             layers = <0>;
         };
 
         h {
             bindings = <&kp GREATER_THAN>;
-            key-positions = <26 25>;
+            key-positions = <25 24>;
             layers = <0>;
         };
 
