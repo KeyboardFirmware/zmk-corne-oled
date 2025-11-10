@@ -120,6 +120,11 @@
             key-positions = <5 44 7 45>;
             layers = <0>;
         };
+
+        j {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <17 23>;
+        };
     };
 
     keymap {
