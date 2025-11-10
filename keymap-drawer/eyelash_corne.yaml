@@ -222,3 +222,5 @@ combos:
 - p: [5, 44, 7, 45]
   k: '&soft_off'
   l: [abc]
+- p: [17, 23]
+  k: $$mdi:apple-keyboard-caps$$
