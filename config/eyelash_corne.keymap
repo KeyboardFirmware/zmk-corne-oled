@@ -140,10 +140,10 @@
 
         number {
             bindings = <
-&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &trans
-&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
-&none   &none      &none     &none     &none      &none   &none            &trans          &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
-                             &trans    &trans     &trans                                   &trans        &trans        &trans
+&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &none   &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none         &trans
+&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &none   &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp NUMBER_0  &none
+&none   &none      &none     &none     &none      &none   &none            &trans          &none   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none         &none
+                             &trans    &trans     &trans                                   &trans  &trans        &trans
             >;
 
             label = "num";
@@ -153,7 +153,7 @@
             bindings = <
 &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &none        &kp PLUS       &kp MINUS       &kp ASTERISK     &kp SLASH    &trans
 &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp POUND    &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION  &kp PERCENT  &none
-&none   &none      &none     &none     &none      &none   &none            &trans          &kp AT_SIGN  &kp AMPERSAND  &kp PIPE        &kp LCTRL        &kp DOLLAR   &none
+&none   &none      &none     &none     &none      &none   &none            &trans          &kp AT_SIGN  &kp AMPERSAND  &kp PIPE        &kp CARET        &kp DOLLAR   &none
                              &trans    &trans     &trans                                   &trans       &trans         &trans
             >;
 
