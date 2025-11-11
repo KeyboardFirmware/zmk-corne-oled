@@ -151,10 +151,10 @@
 
         symbol {
             bindings = <
-&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                   &trans          &none   &kp PLUS       &kp MINUS       &kp ASTERISK     &kp SLASH    &trans
-&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none           &trans  &trans  &trans  &none   &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION  &kp PERCENT  &kp POUND
-&none   &none      &none     &none     &none      &none  &none            &trans          &none   &kp AMPERSAND  &kp PIPE        &kp LCTRL        &kp AT_SIGN  &kp DOLLAR
-                             &trans    &trans     &trans                                  &trans  &trans         &trans
+&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                   &trans          &none        &kp PLUS       &kp MINUS       &kp ASTERISK     &kp SLASH    &trans
+&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none           &trans  &trans  &trans  &kp POUND    &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION  &kp PERCENT  &none
+&none   &none      &none     &none     &none      &none  &none            &trans          &kp AT_SIGN  &kp AMPERSAND  &kp PIPE        &kp LCTRL        &kp DOLLAR   &none
+                             &trans    &trans     &trans                                  &trans       &trans         &trans
             >;
         };
 
