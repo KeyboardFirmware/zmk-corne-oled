@@ -119,7 +119,12 @@
 
         k {
             bindings = <&mo 4>;
-            key-positions = <42 47>;
+            key-positions = <42 28>;
+        };
+
+        l {
+            bindings = <&mo 4>;
+            key-positions = <47 41>;
         };
     };
 
