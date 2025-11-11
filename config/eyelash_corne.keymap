@@ -114,7 +114,7 @@
 
         j {
             bindings = <&kp CAPSLOCK>;
-            key-positions = <13 27>;
+            key-positions = <42 47>;
         };
 
         k {
