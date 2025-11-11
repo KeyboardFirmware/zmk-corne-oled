@@ -114,6 +114,11 @@
 
         j {
             bindings = <&kp CAPSLOCK>;
+            key-positions = <13 27>;
+        };
+
+        k {
+            bindings = <&mo 4>;
             key-positions = <42 47>;
         };
     };
