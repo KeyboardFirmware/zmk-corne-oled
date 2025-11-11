@@ -239,12 +239,12 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
 combos:
 - p: [4, 3]
   k: '{'
@@ -271,5 +271,7 @@ combos:
 - p: [5, 44, 7, 45]
   k: '&soft_off'
   l: [abc]
-- p: [42, 47]
+- p: [13, 27]
   k: $$mdi:apple-keyboard-caps$$
+- p: [42, 47]
+  k: adm
