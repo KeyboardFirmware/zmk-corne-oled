@@ -581,10 +581,10 @@ rect.held, rect.combo.held {
 <text x="490" y="133" class="combo tap"><tspan style="font-size: 67%">&amp;soft_off</tspan></text>
 </g>
 <g class="combo combopos-9">
-<path d="M490,105 l-443,0" class="combo"/>
-<path d="M490,105 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="96" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="194" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-10">
 <path d="M126,182 l80,17" class="combo"/>
@@ -856,10 +856,10 @@ rect.held, rect.combo.held {
 <text x="756" y="87" class="combo tap">)</text>
 </g>
 <g class="combo combopos-2">
-<path d="M490,105 l-443,0" class="combo"/>
-<path d="M490,105 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="96" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="194" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-3">
 <path d="M126,182 l80,17" class="combo"/>
@@ -1134,10 +1134,10 @@ rect.held, rect.combo.held {
 <text x="756" y="87" class="combo tap">)</text>
 </g>
 <g class="combo combopos-2">
-<path d="M490,105 l-443,0" class="combo"/>
-<path d="M490,105 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="96" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="194" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-3">
 <path d="M126,182 l80,17" class="combo"/>
@@ -1409,10 +1409,10 @@ rect.held, rect.combo.held {
 <text x="756" y="87" class="combo tap">)</text>
 </g>
 <g class="combo combopos-2">
-<path d="M490,105 l-443,0" class="combo"/>
-<path d="M490,105 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="96" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="194" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-3">
 <path d="M126,182 l80,17" class="combo"/>
@@ -1693,10 +1693,10 @@ rect.held, rect.combo.held {
 <text x="756" y="87" class="combo tap">)</text>
 </g>
 <g class="combo combopos-2">
-<path d="M490,105 l-443,0" class="combo"/>
-<path d="M490,105 l443,0" class="combo"/>
-<rect rx="6" ry="6" x="476" y="92" width="28" height="26" class="combo"/>
-<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="96" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
+<path d="M490,203 l-247,0" class="combo"/>
+<path d="M490,203 l247,0" class="combo"/>
+<rect rx="6" ry="6" x="476" y="190" width="28" height="26" class="combo"/>
+<use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="481" y="194" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>
 <g class="combo combopos-3">
 <path d="M126,182 l80,17" class="combo"/>
