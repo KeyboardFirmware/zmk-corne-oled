@@ -142,7 +142,7 @@
             bindings = <
 &trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &none         &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &none  &trans
 &trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none  &none
-&none   &none      &none     &none     &none      &none  &none             &trans          &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
+&none   &none      &none     &none     &none      &none   &none            &trans          &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &none  &none
                              &trans    &trans     &trans                                   &trans        &trans        &trans
             >;
 
@@ -151,30 +151,32 @@
 
         symbol {
             bindings = <
-&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                   &trans          &none        &kp PLUS       &kp MINUS       &kp ASTERISK     &kp SLASH    &trans
-&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none           &trans  &trans  &trans  &kp POUND    &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION  &kp PERCENT  &none
-&none   &none      &none     &none     &none      &none  &none            &trans          &kp AT_SIGN  &kp AMPERSAND  &kp PIPE        &kp LCTRL        &kp DOLLAR   &none
-                             &trans    &trans     &trans                                  &trans       &trans         &trans
+&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &none        &kp PLUS       &kp MINUS       &kp ASTERISK     &kp SLASH    &trans
+&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp POUND    &kp EQUAL      &kp UNDERSCORE  &kp EXCLAMATION  &kp PERCENT  &none
+&none   &none      &none     &none     &none      &none   &none            &trans          &kp AT_SIGN  &kp AMPERSAND  &kp PIPE        &kp LCTRL        &kp DOLLAR   &none
+                             &trans    &trans     &trans                                   &trans       &trans         &trans
             >;
+
+            label = "sym";
         };
 
-        navigation {
+        function {
             bindings = <
-&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                   &trans          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none           &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &none
-&none   &none      &none     &none     &none      &none  &none            &trans          &trans  &kp F1  &kp F2   &kp F3   &kp F4   &none
-                             &trans    &trans     &trans                                  &trans  &trans  &trans
+&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &none
+&none   &none      &none     &none     &none      &none   &none            &trans          &trans  &kp F1  &kp F2   &kp F3   &kp F4   &none
+                             &trans    &trans     &trans                                   &trans  &trans  &trans
             >;
 
-            label = "nav";
+            label = "fun";
         };
 
         admin {
             bindings = <
-&bootloader  &trans  &trans  &trans  &trans          &bt BT_SEL 0                    &trans          &rgb_ug RGB_BRI                 &trans           &trans  &trans  &trans  &bootloader
-&trans       &trans  &trans  &trans  &trans          &bt BT_SEL 1            &trans  &trans  &trans  &rgb_ug RGB_BRD                 &trans           &trans  &trans  &trans  &trans
-&trans       &trans  &trans  &trans  &bt BT_CLR_ALL  &bt BT_SEL 2  &trans            &trans          &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &trans  &trans  &trans  &trans
-                             &trans  &trans          &trans                                          &trans                          &trans           &trans
+&bootloader  &none  &none  &none   &none           &bt BT_SEL 0                  &none         &rgb_ug RGB_BRI                 &none            &none   &none  &none  &bootloader
+&none        &none  &none  &none   &none           &bt BT_SEL 1           &none  &none  &none  &rgb_ug RGB_BRD                 &none            &none   &none  &none  &none
+&none        &none  &none  &none   &bt BT_CLR_ALL  &bt BT_SEL 2  &none           &none         &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &none   &none  &none  &none
+                           &trans  &trans          &trans                                      &trans                          &trans           &trans
             >;
 
             label = "adm";
