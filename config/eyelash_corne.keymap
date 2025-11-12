@@ -27,7 +27,8 @@
 
 &mt {
     flavor = "tap-preferred";
-    tapping-term-ms = <400>;
+    tapping-term-ms = <300>;
+    quick-tap-ms = <150>;
 };
 
 / {
@@ -57,64 +58,121 @@
         mods = <(MOD_RSFT|MOD_LSFT)>;
     };
 
+    parenthesis: parenthesis {
+        compatible = "zmk,behavior-mod-morph";
+        label = "PARENTHESIS";
+        bindings = <&kp LEFT_PARENTHESIS>, <&kp RIGHT_PARENTHESIS>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    curly: curly {
+        compatible = "zmk,behavior-mod-morph";
+        label = "CURLY";
+        bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    square: square {
+        compatible = "zmk,behavior-mod-morph";
+        label = "SQUARE";
+        bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    angle: angle {
+        compatible = "zmk,behavior-mod-morph";
+        label = "ANGLE";
+        bindings = <&kp LESS_THAN>, <&kp GREATER_THAN>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    and_or: and_or {
+        compatible = "zmk,behavior-mod-morph";
+        label = "AND_OR";
+        bindings = <&kp AMPERSAND>, <&kp PIPE>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    regex: regex {
+        compatible = "zmk,behavior-mod-morph";
+        label = "REGEX";
+        bindings = <&kp CARET>, <&kp DOLLAR>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    plus_minus: plus_minus {
+        compatible = "zmk,behavior-mod-morph";
+        label = "PLUS_MINUS";
+        bindings = <&kp PLUS>, <&kp MINUS>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    mult_div: mult_div {
+        compatible = "zmk,behavior-mod-morph";
+        label = "MULT_DIV";
+        bindings = <&kp ASTERISK>, <&kp SLASH>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    hash_at: hash_at {
+        compatible = "zmk,behavior-mod-morph";
+        label = "HASH_AT";
+        bindings = <&kp HASH>, <&kp AT_SIGN>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    fb_slash: fb_slash {
+        compatible = "zmk,behavior-mod-morph";
+        label = "FB_SLASH";
+        bindings = <&kp SLASH>, <&kp BACKSLASH>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    not_equal: not_equal {
+        compatible = "zmk,behavior-mod-morph";
+        label = "NOT_EQUAL";
+        bindings = <&kp EXCLAMATION>, <&kp EQUAL>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    under_percent: under_percent {
+        compatible = "zmk,behavior-mod-morph";
+        label = "UNDER_PERCENT";
+        bindings = <&kp UNDERSCORE>, <&kp PERCENT>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
-        a {
-            bindings = <&kp LEFT_BRACE>;
-            key-positions = <4 3>;
-            layers = <0>;
-        };
-
-        b {
-            bindings = <&kp RIGHT_BRACE>;
-            key-positions = <9 8>;
-            layers = <0>;
-        };
-
-        c {
-            bindings = <&kp LEFT_PARENTHESIS>;
-            key-positions = <16 17>;
-        };
-
-        d {
-            bindings = <&kp RIGHT_PARENTHESIS>;
-            key-positions = <23 24>;
-        };
-
-        e {
-            bindings = <&kp LEFT_BRACKET>;
-            key-positions = <15 16>;
-            layers = <0>;
-        };
-
-        f {
-            bindings = <&kp RIGHT_BRACKET>;
-            key-positions = <24 25>;
-            layers = <0>;
-        };
-
-        g {
-            bindings = <&kp LESS_THAN>;
-            key-positions = <2 3>;
-            layers = <0>;
-        };
-
-        h {
-            bindings = <&kp GREATER_THAN>;
-            key-positions = <9 10>;
-            layers = <0>;
-        };
-
         i {
             bindings = <&mo 3>;
-            key-positions = <44 45>;
+            key-positions = <42 47>;
             layers = <0>;
-        };
-
-        j {
-            bindings = <&mo 4>;
-            key-positions = <43 46>;
         };
 
         k {
@@ -129,46 +187,35 @@
         default {
             display-name = "abc";
             bindings = <
-&kp ESC             &kp Q  &kp W  &kp E             &kp R  &kp T                                 &msc SCRL_UP                     &kp Y        &kp U  &kp I          &kp O    &kp P          &bsp_del
-&mt TAB LEFT_SHIFT  &kp A  &kp S  &kp D             &kp F  &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J  &kp K          &kp L    &kp SEMICOLON  &mt RIGHT_SHIFT SQT
-&kp GRAVE           &kp Z  &kp X  &kp C             &kp V  &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp BACKSLASH
-                                  &kp LEFT_CONTROL  &mo 2  &lt 1 SPACE                                                            &lt 1 ENTER  &mo 2  &kp RIGHT_ALT
+&kp ESC         &kp Q  &kp W  &kp E             &kp R      &kp T                                 &msc SCRL_UP                     &kp Y        &kp U            &kp I              &kp O    &kp P          &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A  &kp S  &kp D             &kp F      &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J            &kp K              &kp L    &kp SEMICOLON  &kp RIGHT_SHIFT
+&kp LEFT_ALT    &kp Z  &kp X  &kp C             &kp V      &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M            &kp COMMA          &kp DOT  &kp FSLH       &kp RIGHT_ALT
+                              &kp LEFT_CONTROL  &lt 2 TAB  &lt 1 SPACE                                                            &lt 1 ENTER  &lt 2 RIGHT_GUI  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        navigation {
+        navigation_symbol {
             bindings = <
-&trans  &none  &kp HOME  &kp UP    &kp END    &none                    &trans          &none   &none   &none   &none  &none  &trans
-&trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &none   &none   &none   &none  &none  &trans
-&none   &none  &none     &none     &none      &none   &none            &trans          &none   &none   &none   &none  &none  &none
-                         &trans    &trans     &trans                                   &trans  &trans  &trans
+&trans  &none  &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &not_equal    &under_percent  &and_or   &regex     &trans
+&trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT     &parenthesis  &curly          &square   &angle     &trans
+&none   &none  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &fb_slash  &none
+                         &trans    &trans     &trans                                   &trans      &trans        &trans
             >;
 
-            label = "nav";
+            label = "sym";
         };
 
-        number {
+        number_func {
             bindings = <
-&trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                   &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &none         &none         &none         &none         &kp MINUS              &trans  &trans  &trans  &kp EQUAL     &none         &none         &none         &none         &trans
-&none   &none         &none         &none         &none         &none         &none            &trans          &none         &none         &none         &none         &none         &none
-                                    &trans        &trans        &trans                                         &trans        &trans        &trans
-            >;
-
-            label = "num";
-        };
-
-        function {
-            bindings = <
-&trans  &kp F1  &kp F1  &kp F3  &kp F4  &kp F5                    &trans          &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &none   &none   &none   &none   &kp F11           &trans  &trans  &trans  &kp F12  &none   &none   &none   &none    &trans
-&none   &none   &none   &none   &none   &none    &none            &trans          &trans   &none   &none   &none   &none    &none
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6   &kp N7  &kp N8  &kp N9  &kp N0   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &trans  &trans  &trans  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&none   &none   &none   &none   &none   &kp F11  &none            &trans          &kp F12  &none   &none   &none   &none    &none
                         &trans  &trans  &trans                                    &trans   &trans  &trans
             >;
 
-            label = "fun";
+            label = "num";
         };
 
         admin {
