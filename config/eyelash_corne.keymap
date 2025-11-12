@@ -28,11 +28,11 @@
 &mt {
     flavor = "tap-preferred";
     tapping-term-ms = <300>;
-    quick-tap-ms = <150>;
+    quick-tap-ms = <200>;
 };
 
 &lt {
-    quick-tap-ms = <150>;
+    quick-tap-ms = <200>;
     tapping-term-ms = <300>;
 };
 
@@ -203,10 +203,10 @@
 
         navigation_symbol {
             bindings = <
-&trans  &none  &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &equal_hot    &under_percent  &and_or   &regex     &trans
-&trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT     &parenthesis  &curly          &square   &angle     &trans
-&trans  &none  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &bf_slash  &trans
-                         &trans    &trans     &trans                                   &trans      &trans        &trans
+&trans  &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &equal_hot    &under_percent  &and_or   &regex     &trans
+&trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT     &parenthesis  &curly          &square   &angle     &trans
+&trans  &kp PRINTSCREEN  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &bf_slash  &trans
+                                   &trans    &trans     &trans                                   &trans      &trans        &trans
             >;
 
             label = "sym";
@@ -214,9 +214,9 @@
 
         number_func {
             bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6   &kp N7  &kp N8   &kp N9   &kp N0   &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &trans  &trans  &trans  &kp F6   &kp F7  &kp F8   &kp F9   &kp F10  &trans
-&trans  &none   &none   &none   &none   &kp F10  &none             &trans         &kp F12  &none   &none    &none    &none    &trans
+&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6   &kp N7  &kp N8  &kp N9  &kp N0   &trans
+&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &trans  &trans  &trans  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &none   &none   &none   &none   &kp F11  &none            &trans          &kp F12  &none   &none   &none   &none    &trans
                         &trans  &trans  &trans                                    &trans   &trans  &trans
             >;
 
