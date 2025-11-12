@@ -107,24 +107,19 @@
         };
 
         i {
-            bindings = <&soft_off>;
-            key-positions = <5 44 7 45>;
+            bindings = <&mo 3>;
+            key-positions = <44 45>;
             layers = <0>;
         };
 
         j {
-            bindings = <&kp CAPSLOCK>;
-            key-positions = <42 47>;
+            bindings = <&mo 4>;
+            key-positions = <43 46>;
         };
 
         k {
-            bindings = <&mo 4>;
-            key-positions = <42 28>;
-        };
-
-        l {
-            bindings = <&mo 4>;
-            key-positions = <47 41>;
+            bindings = <&kp CAPS>;
+            key-positions = <33 36>;
         };
     };
 
@@ -134,19 +129,30 @@
         default {
             display-name = "abc";
             bindings = <
-&kp ESC    &kp Q       &kp W               &kp E           &kp R             &kp T                                 &msc SCRL_UP                     &kp Y        &kp U              &kp I            &kp O                &kp P                    &bsp_del
-&kp TAB    &mt RGUI A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &mt K_CONTEXT_MENU SEMI  &kp SQT
-&kp GRAVE  &kp Z       &kp X               &kp C           &kp V             &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M              &kp COMMA        &kp DOT              &kp FSLH                 &kp BACKSLASH
-                                           &mo 3           &mo 2             &lt 1 SPACE                                                            &lt 1 ENTER  &mo 2              &mo 3
+&kp ESC             &kp Q  &kp W  &kp E             &kp R  &kp T                                 &msc SCRL_UP                     &kp Y        &kp U  &kp I          &kp O    &kp P          &bsp_del
+&mt TAB LEFT_SHIFT  &kp A  &kp S  &kp D             &kp F  &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J  &kp K          &kp L    &kp SEMICOLON  &mt RIGHT_SHIFT SQT
+&kp GRAVE           &kp Z  &kp X  &kp C             &kp V  &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M  &kp COMMA      &kp DOT  &kp FSLH       &kp BACKSLASH
+                                  &kp LEFT_CONTROL  &mo 2  &lt 1 SPACE                                                            &lt 1 ENTER  &mo 2  &kp RIGHT_ALT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
+        navigation {
+            bindings = <
+&trans  &none  &kp HOME  &kp UP    &kp END    &none                    &trans          &none   &none   &none   &none  &none  &trans
+&trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &none   &none   &none   &none  &none  &trans
+&none   &none  &none     &none     &none      &none   &none            &trans          &none   &none   &none   &none  &none  &none
+                         &trans    &trans     &trans                                   &trans  &trans  &trans
+            >;
+
+            label = "nav";
+        };
+
         number {
             bindings = <
 &trans  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5                   &trans          &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &none         &none         &none         &none         &kp MINUS              &trans  &trans  &trans  &kp EQUAL     &none         &none         &none         &none         &none
+&trans  &none         &none         &none         &none         &kp MINUS              &trans  &trans  &trans  &kp EQUAL     &none         &none         &none         &none         &trans
 &none   &none         &none         &none         &none         &none         &none            &trans          &none         &none         &none         &none         &none         &none
                                     &trans        &trans        &trans                                         &trans        &trans        &trans
             >;
@@ -154,23 +160,12 @@
             label = "num";
         };
 
-        navigation {
-            bindings = <
-&trans  &kp PG_UP  &kp HOME  &kp UP    &kp END    &none                    &trans          &none   &none   &none   &none  &none  &trans
-&trans  &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &none   &none   &none   &none  &none  &none
-&none   &none      &none     &none     &none      &none   &none            &trans          &none   &none   &none   &none  &none  &none
-                             &trans    &trans     &trans                                   &trans  &trans  &trans
-            >;
-
-            label = "nav";
-        };
-
         function {
             bindings = <
-&trans  &kp F1  &kp F1  &kp F3  &kp F4  &kp F5                     &trans          &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &none   &none   &none   &none   &kp F11            &trans  &trans  &trans  &kp F12  &none   &none   &none   &none    &none
-&none   &none   &none   &none   &none   &none    &none             &trans          &trans   &none   &none   &none   &none    &none
-                        &trans  &trans  &trans                                     &trans   &trans  &trans
+&trans  &kp F1  &kp F1  &kp F3  &kp F4  &kp F5                    &trans          &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
+&trans  &none   &none   &none   &none   &kp F11           &trans  &trans  &trans  &kp F12  &none   &none   &none   &none    &trans
+&none   &none   &none   &none   &none   &none    &none            &trans          &trans   &none   &none   &none   &none    &none
+                        &trans  &trans  &trans                                    &trans   &trans  &trans
             >;
 
             label = "fun";
