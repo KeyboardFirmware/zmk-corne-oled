@@ -144,19 +144,19 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    fb_slash: fb_slash {
+    bf_slash: bf_slash {
         compatible = "zmk,behavior-mod-morph";
-        label = "FB_SLASH";
-        bindings = <&kp SLASH>, <&kp BACKSLASH>;
+        label = "BF_SLASH";
+        bindings = <&kp BACKSLASH>, <&kp SLASH>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
-    not_equal: not_equal {
+    equal_hot: equal_hot {
         compatible = "zmk,behavior-mod-morph";
-        label = "NOT_EQUAL";
-        bindings = <&kp EXCLAMATION>, <&kp EQUAL>;
+        label = "EQUAL_HOT";
+        bindings = <&kp EQUAL>, <&kp EXCLAMATION>;
 
         #binding-cells = <0>;
         mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -203,9 +203,9 @@
 
         navigation_symbol {
             bindings = <
-&trans  &none  &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &not_equal    &under_percent  &and_or   &regex     &trans
+&trans  &none  &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &equal_hot    &under_percent  &and_or   &regex     &trans
 &trans  &none  &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT     &parenthesis  &curly          &square   &angle     &trans
-&none   &none  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &fb_slash  &none
+&trans  &none  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &bf_slash  &trans
                          &trans    &trans     &trans                                   &trans      &trans        &trans
             >;
 
