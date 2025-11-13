@@ -29,7 +29,7 @@ layers:
   - L
   - {t: ;, s: ':'}
   - $$mdi:apple-keyboard-shift$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - Z
   - X
   - C
@@ -42,12 +42,12 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-option$$
+  - {t: 'Sft+$$mdi:keyboard-tab$$', h: CONTEXT MENU}
   - $$mdi:apple-keyboard-control$$
-  - {t: '$$mdi:keyboard-tab$$', h: num}
+  - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: sym}
-  - {t: '$$mdi:keyboard-return$$', h: sym}
-  - {t: RIGHT GUI, h: num}
+  - {t: '$$mdi:keyboard-return$$', h: num}
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
   sym:
   - {t: '$$mdi:transfer$$', type: trans}
@@ -95,7 +95,7 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
-  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   num:
@@ -142,10 +142,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   adm:
   - $$mdi:progress-download$$
