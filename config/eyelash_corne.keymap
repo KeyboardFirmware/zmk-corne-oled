@@ -174,15 +174,87 @@
     combos {
         compatible = "zmk,combos";
 
-        i {
+        a {
             bindings = <&mo 3>;
             key-positions = <44 45>;
             layers = <0>;
         };
 
-        k {
+        b {
             bindings = <&kp CAPS>;
             key-positions = <13 27>;
+        };
+
+        c {
+            bindings = <&kp ESC>;
+            key-positions = <44 45>;
+            timeout-ms = <50>;
+        };
+
+        d {
+            bindings = <&kp ENTER>;
+            key-positions = <44 45>;
+            layers = <1>;
+        };
+
+        e {
+            bindings = <&kp SPACE>;
+            key-positions = <29 43>;
+            layers = <0>;
+        };
+
+        f {
+            bindings = <&kp TAB>;
+            key-positions = <29 43>;
+            layers = <2>;
+        };
+
+        g {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <13 27>;
+            layers = <0>;
+        };
+
+        h {
+            bindings = <&bsp_del>;
+            key-positions = <13 27>;
+            layers = <1>;
+        };
+
+        i {
+            bindings = <&kp DELETE>;
+            key-positions = <13 27>;
+            layers = <2>;
+        };
+
+        j {
+            bindings = <&scroll_encoder>;
+            key-positions = <0 1>;
+            layers = <0>;
+        };
+
+        k {
+            bindings = <&rgb_encoder>;
+            key-positions = <0 1>;
+            layers = <1>;
+        };
+
+        l {
+            bindings = <&bt BT_NEXT>;
+            key-positions = <0 1>;
+            layers = <2>;
+        };
+
+        m {
+            bindings = <&kp CAPS>;
+            key-positions = <13 27>;
+            timeout-ms = <50>;
+        };
+
+        n {
+            bindings = <&mo A>;
+            key-positions = <44 45>;
+            timeout-ms = <50>;
         };
     };
 
@@ -193,8 +265,8 @@
             display-name = "abc";
             bindings = <
 &kp ESC           &kp Q  &kp W  &kp E             &kp R         &kp T                                 &msc SCRL_UP                     &kp Y        &kp U          &kp I              &kp O    &kp P          &kp BACKSPACE
-&kp LEFT_SHIFT    &kp A  &kp S  &kp D             &kp F         &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON  &kp RIGHT_SHIFT
-&mt LEFT_GUI TAB  &kp Z  &kp X  &kp C             &kp V         &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M          &kp COMMA          &kp DOT  &kp FSLH       &mt K_CONTEXT_MENU RS(TAB)
+&mt LEFT_GUI TAB  &kp A  &kp S  &kp D             &kp F         &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON  &mt K_CONTEXT_MENU RS(TAB)
+&kp LEFT_SHIFT    &kp Z  &kp X  &kp C             &kp V         &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M          &kp COMMA          &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
                                 &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                                            &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
