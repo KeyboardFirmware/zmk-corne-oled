@@ -242,10 +242,10 @@
 
         navigation_symbol {
             bindings = <
-&trans  &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &equal_hot    &under_percent  &and_or   &regex     &trans
-&trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT     &parenthesis  &curly          &square   &angle     &trans
-&trans  &kp PRINTSCREEN  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &bf_slash  &trans
-                                   &trans    &trans     &trans                                   &trans      &trans        &trans
+&trans  &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE  &kp UNDERSCORE   &kp DOLLAR     &kp PIPE     &kp CARET     &trans
+&trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT    &kp EQUAL        &kp PLUS       &kp MINUS    &kp ASTERISK  &trans
+&trans  &kp PRINTSCREEN  &none     &none     &none      &none   &none            &trans          &kp DEL    &kp EXCLAMATION  &kp BACKSLASH  &kp PERCENT  &kp SLASH     &trans
+                                   &trans    &trans     &trans                                   &trans     &trans           &trans
             >;
 
             label = "sym";
