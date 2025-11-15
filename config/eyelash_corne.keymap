@@ -202,7 +202,6 @@
         f {
             bindings = <&kp RIGHT_BRACE>;
             key-positions = <8 9>;
-            layers = <2>;
         };
 
         g {
