@@ -58,10 +58,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - {t: '=', s: '!'}
-  - {t: _, s: '%'}
-  - {t: '&', s: '|'}
-  - {t: ^, s: $}
+  - _
+  - $
+  - '|'
+  - ^
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
@@ -73,10 +73,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
-  - {t: (, s: )}
-  - {t: '{', s: '}'}
-  - {t: '[', s: ']'}
-  - {t: <, s: '>'}
+  - {t: '=', s: +}
+  - +
+  - {t: '-', s: _}
+  - '*'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
@@ -87,10 +87,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - {t: +, s: '-'}
-  - {t: '*', s: /}
-  - {t: '#', s: '@'}
-  - {t: \, s: /}
+  - '!'
+  - {t: \, s: '|'}
+  - '%'
+  - {t: /, s: '?'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
