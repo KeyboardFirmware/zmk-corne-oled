@@ -14,7 +14,7 @@ layers:
   - O
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
-  - $$mdi:apple-keyboard-shift$$
+  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - A
   - S
   - D
@@ -28,8 +28,8 @@ layers:
   - K
   - L
   - {t: ;, s: ':'}
+  - {t: 'Sft+$$mdi:keyboard-tab$$', h: CONTEXT MENU}
   - $$mdi:apple-keyboard-shift$$
-  - {t: '$$mdi:keyboard-tab$$', h: '$$mdi:apple-keyboard-command$$'}
   - Z
   - X
   - C
@@ -42,7 +42,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - {t: 'Sft+$$mdi:keyboard-tab$$', h: CONTEXT MENU}
+  - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: sym}
@@ -199,6 +199,22 @@ layers:
 combos:
 - p: [44, 45]
   k: adm
-  l: [abc]
 - p: [13, 27]
   k: $$mdi:apple-keyboard-caps$$
+- p: [2, 3]
+  k: <
+- p: [9, 10]
+  k: '>'
+- p: [3, 4]
+  k: '{'
+- p: [8, 9]
+  k: '}'
+  l: [num]
+- p: [16, 15]
+  k: {t: '[', s: '{'}
+- p: [24, 25]
+  k: {t: ']', s: '}'}
+- p: [16, 17]
+  k: (
+- p: [23, 24]
+  k: )
