@@ -58,10 +58,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '`', s: '~'}
-  - _
-  - $
-  - '|'
-  - ^
+  - {t: '=', s: '!'}
+  - {t: _, s: '%'}
+  - {t: '&', s: '|'}
+  - {t: ^, s: $}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
@@ -73,10 +73,10 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '''', s: '"'}
-  - {t: '=', s: +}
-  - +
-  - {t: '-', s: _}
-  - '*'
+  - {t: (, s: )}
+  - {t: '{', s: '}'}
+  - {t: '[', s: ']'}
+  - {t: <, s: '>'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PRINTSCREEN
@@ -87,10 +87,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:backspace-reverse-outline$$
-  - '!'
-  - {t: \, s: '|'}
-  - '%'
-  - {t: /, s: '?'}
+  - {t: +, s: '-'}
+  - {t: '*', s: /}
+  - {t: '#', s: '@'}
+  - {t: \, s: /}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -201,19 +201,3 @@ combos:
   k: adm
 - p: [13, 27]
   k: $$mdi:apple-keyboard-caps$$
-- p: [2, 3]
-  k: <
-- p: [9, 10]
-  k: '>'
-- p: [3, 4]
-  k: '{'
-- p: [8, 9]
-  k: '}'
-- p: [16, 15]
-  k: {t: '[', s: '{'}
-- p: [24, 25]
-  k: {t: ']', s: '}'}
-- p: [16, 17]
-  k: (
-- p: [23, 24]
-  k: )
