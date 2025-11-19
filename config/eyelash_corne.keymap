@@ -54,15 +54,6 @@
         tap-ms = <100>;
     };
 
-    bsp_del: bsp_del {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BSP_DEL";
-        bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_RSFT|MOD_LSFT)>;
-    };
-
     parenthesis: parenthesis {
         compatible = "zmk,behavior-mod-morph";
         label = "PARENTHESIS";
@@ -171,17 +162,49 @@
         mods = <(MOD_LSFT|MOD_RSFT)>;
     };
 
+    bsp_del: bsp_del {
+        compatible = "zmk,behavior-tap-dance";
+        label = "BSP_DEL";
+        #binding-cells = <0>;
+        bindings = <&kp BACKSPACE>, <&kp DEL>;
+    };
+
     combos {
         compatible = "zmk,combos";
 
-        a {
-            bindings = <&mo 3>;
-            key-positions = <44 45>;
-        };
-
         b {
             bindings = <&kp CAPS>;
-            key-positions = <13 27>;
+            key-positions = <28 41>;
+        };
+
+        up {
+            bindings = <&kp UP>;
+            key-positions = <3 15 17>;
+        };
+
+        down {
+            bindings = <&kp DOWN>;
+            key-positions = <15 16 17>;
+        };
+
+        left {
+            bindings = <&kp LEFT>;
+            key-positions = <15 16>;
+        };
+
+        right {
+            bindings = <&kp RIGHT>;
+            key-positions = <16 17>;
+        };
+
+        home {
+            bindings = <&kp HOME>;
+            key-positions = <2 3>;
+        };
+
+        end {
+            bindings = <&kp END>;
+            key-positions = <3 4>;
         };
     };
 
@@ -191,43 +214,43 @@
         default {
             display-name = "abc";
             bindings = <
-&kp ESC           &kp Q  &kp W  &kp E             &kp R         &kp T                                 &msc SCRL_UP                     &kp Y        &kp U          &kp I              &kp O    &kp P          &kp BACKSPACE
-&mt LEFT_GUI TAB  &kp A  &kp S  &kp D             &kp F         &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON  &mt K_CONTEXT_MENU RS(TAB)
-&kp LEFT_SHIFT    &kp Z  &kp X  &kp C             &kp V         &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M          &kp COMMA          &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
-                                &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                                            &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp ESC           &kp Q  &kp W               &kp E           &kp R             &kp T                                 &msc SCRL_UP                     &kp Y        &kp U              &kp I            &kp O                &kp P          &bsp_del
+&mt LEFT_GUI TAB  &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &mt K_CONTEXT_MENU LS(TAB)
+&kp LEFT_SHIFT    &kp Z  &kp X               &kp C           &kp V             &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M              &kp COMMA        &kp DOT              &kp FSLH       &kp RIGHT_SHIFT
+                                             &mo 3           &mo 2             &lt 1 SPACE                                                            &lt 1 ENTER  &mo 2              &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        navigation_symbol {
+        number_function {
             bindings = <
-&trans  &kp PAGE_UP      &kp HOME  &kp UP    &kp END    &none                    &trans          &kp GRAVE   &equal_hot    &under_percent  &and_or   &regex     &trans
-&trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN  &kp RIGHT  &none            &trans  &trans  &trans  &kp SQT     &parenthesis  &curly          &square   &angle     &trans
-&trans  &kp PRINTSCREEN  &none     &none     &none      &none   &none            &trans          &kp DELETE  &plus_minus   &mult_div       &hash_at  &bf_slash  &trans
-                                   &trans    &trans     &trans                                   &trans      &trans        &trans
-            >;
-
-            label = "sym";
-        };
-
-        number_func {
-            bindings = <
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5                    &trans          &kp N6   &kp N7  &kp N8  &kp N9  &kp N0   &trans
-&trans  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5            &trans  &trans  &trans  &kp F6   &kp F7  &kp F8  &kp F9  &kp F10  &trans
-&trans  &none   &none   &none   &none   &kp F11  &none            &trans          &kp F12  &none   &none   &none   &none    &trans
-                        &trans  &trans  &trans                                    &trans   &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
             label = "num";
         };
 
+        symbol {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "sym";
+        };
+
         admin {
             bindings = <
-&bootloader  &none  &none  &none   &none           &bt BT_SEL 0                  &none         &rgb_ug RGB_BRI                 &none            &none   &none  &none  &bootloader
-&none        &none  &none  &none   &none           &bt BT_SEL 1           &none  &none  &none  &rgb_ug RGB_BRD                 &none            &none   &none  &none  &none
-&none        &none  &none  &none   &bt BT_CLR_ALL  &bt BT_SEL 2  &none           &none         &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &none   &none  &none  &none
-                           &trans  &trans          &trans                                      &trans                          &trans           &trans
+&bootloader  &sys_reset  &none  &none   &none           &bt BT_SEL 0                  &none         &rgb_ug RGB_BRI                 &none            &none   &none  &sys_reset  &bootloader
+&none        &none       &none  &none   &none           &bt BT_SEL 1           &none  &none  &none  &rgb_ug RGB_BRD                 &none            &none   &none  &none       &none
+&none        &none       &none  &none   &bt BT_CLR_ALL  &bt BT_SEL 2  &none           &none         &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &none   &none  &none       &none
+                                &trans  &trans          &trans                                      &trans                          &trans           &trans
             >;
 
             label = "adm";
