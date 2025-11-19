@@ -28,7 +28,7 @@ layers:
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '$$mdi:keyboard-tab-reverse$$', h: CONTEXT MENU}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -100,20 +100,20 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   sym:
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - {t: '`', s: '~'}
   - '@'
-  - '&'
   - ^
-  - '{'
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '}'
   - $
+  - {t: '''', s: '"'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '"'
+  - '&'
   - '|'
   - '#'
-  - '"'
+  - '~'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
+  - {t: \, s: '|'}
   - '!'
   - {t: '=', s: +}
   - _
@@ -125,21 +125,21 @@ layers:
   - +
   - {t: '-', s: _}
   - '*'
-  - {t: '''', s: '"'}
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, s: '|'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '{'
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
+  - '}'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {type: held}
