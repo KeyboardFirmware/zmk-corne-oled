@@ -47,7 +47,7 @@ layers:
   - num
   - {t: '$$mdi:keyboard-space$$', h: sym}
   - {t: '$$mdi:keyboard-return$$', h: sym}
-  - num
+  - {t: '$$mdi:backspace-reverse-outline$$', h: num}
   - adm
   sym:
   - {t: '$$mdi:transfer$$', type: trans}
