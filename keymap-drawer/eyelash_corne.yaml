@@ -7,7 +7,7 @@ layers:
   - E
   - R
   - T
-  - $$mdi:pan-up$$
+  - $$mdi:arrow-up-bold$$
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
   - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
-  - $$mdi:pan-left$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-right$$
+  - $$mdi:arrow-left-bold$$
+  - {t: '$$mdi:keyboard-return$$', type: enter}
+  - $$mdi:arrow-right-bold$$
   - H
   - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
@@ -36,7 +36,7 @@ layers:
   - V
   - B
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:pan-down$$
+  - $$mdi:arrow-down-bold$$
   - N
   - M
   - {t: ',', s: <}
@@ -44,79 +44,30 @@ layers:
   - {t: /, s: '?'}
   - $$mdi:apple-keyboard-shift$$
   - adm
-  - sym
-  - {t: '$$mdi:keyboard-space$$', h: num}
-  - {t: '$$mdi:keyboard-return$$', h: num}
-  - sym
+  - num
+  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:keyboard-return$$', h: sym}
+  - num
   - adm
-  num:
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F11
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - F12
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {type: held}
-  - {type: held alternate}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   sym:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - '@'
-  - ^
-  - $
-  - {t: '''', s: '"'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - '"'
+  - '~'
+  - {t: \, s: '|'}
   - '&'
   - '|'
-  - '#'
-  - '~'
+  - '{'
+  - {t: '$$mdi:transfer$$', type: trans}
+  - '}'
+  - ^
+  - $
+  - '%'
+  - '"'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: \, s: '|'}
+  - {t: '`', s: '~'}
   - '!'
-  - {t: '=', s: +}
   - _
+  - {t: '=', s: +}
   - (
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -125,19 +76,68 @@ layers:
   - +
   - {t: '-', s: _}
   - '*'
-  - '%'
+  - {t: '''', s: '"'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '{'
+  - '@'
   - {t: '[', s: '{'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: ']', s: '}'}
-  - '}'
+  - '#'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {type: held}
+  - {type: held alternate}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  num:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F5
+  - F6
+  - F7
+  - F8
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '5', s: '%'}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -211,3 +211,11 @@ combos:
   k: HOME
 - p: [3, 4]
   k: END
+- p: [8, 9, 10]
+  k: $$mdi:pan-up$$
+- p: [23, 24, 25]
+  k: $$mdi:pan-down$$
+- p: [23, 24]
+  k: $$mdi:pan-left$$
+- p: [24, 25]
+  k: $$mdi:pan-right$$
