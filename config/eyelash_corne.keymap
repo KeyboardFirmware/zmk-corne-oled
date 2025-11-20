@@ -256,9 +256,9 @@
 
         number_function {
             bindings = <
-&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none                     &trans          &none   &kp N9  &kp N0  &kp N0  &kp N0  &trans
-&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none             &trans  &trans  &trans  &none   &kp N5  &kp N6  &kp N7  &kp N8  &trans
-&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &trans            &trans          &none   &kp N1  &kp N2  &kp N3  &kp N4  &trans
+&trans  &kp F9  &kp F10  &kp F11  &kp F12  &none                     &trans          &none   &kp N7  &kp N8  &kp N9  &none  &trans
+&trans  &kp F5  &kp F6   &kp F7   &kp F8   &none             &trans  &trans  &trans  &none   &kp N4  &kp N5  &kp N6  &none  &trans
+&trans  &kp F1  &kp F2   &kp F3   &kp F4   &none   &trans            &trans          &kp N0  &kp N1  &kp N2  &kp N3  &none  &trans
                          &trans   &trans   &trans                                    &trans  &trans  &trans
             >;
 
@@ -274,6 +274,15 @@
             >;
 
             label = "adm";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
