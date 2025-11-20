@@ -201,22 +201,22 @@ combos:
   k: $$mdi:apple-keyboard-caps$$
 - p: [2, 3, 4]
   k: $$mdi:arrow-up-bold$$
-  l: [sym]
+  l: [sym, abc]
 - p: [15, 16, 17]
   k: $$mdi:arrow-down-bold$$
-  l: [sym]
+  l: [sym, abc]
 - p: [15, 16]
   k: $$mdi:arrow-left-bold$$
-  l: [sym]
+  l: [sym, abc]
 - p: [16, 17]
   k: $$mdi:arrow-right-bold$$
-  l: [sym]
+  l: [sym, abc]
 - p: [2, 3]
   k: HOME
-  l: [sym]
+  l: [sym, abc]
 - p: [3, 4]
   k: END
-  l: [sym]
+  l: [sym, abc]
 - p: [2, 3, 4]
   k: $$mdi:pan-up$$
   l: [num]
