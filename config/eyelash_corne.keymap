@@ -234,10 +234,10 @@
         default {
             display-name = "abc";
             bindings = <
-&kp ESC         &kp Q  &kp W               &kp E           &kp R             &kp T                                 &msc SCRL_UP                     &kp Y        &kp U              &kp I                 &kp O                &kp P          &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &mt LEFT_SHIFT F  &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &mt RIGHT_SHIFT J  &mt RIGHT_ALT K       &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp RIGHT_SHIFT
-&kp GRAVE       &kp Z  &kp X               &kp C           &kp V             &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M              &kp COMMA             &kp DOT              &kp FSLH       &kp SQT
-                                           &lt 3 LEFT_GUI  &lt 2 TAB         &lt 1 SPACE                                                            &lt 1 ENTER  &lt 2 DEL          &lt 3 K_CONTEXT_MENU
+&kp ESC         &kp Q  &kp W               &kp E           &kp R      &kp T                                 &msc SCRL_UP                     &kp Y        &kp U      &kp I                 &kp O                &kp P          &kp BACKSPACE
+&kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &kp F      &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J      &mt RIGHT_ALT K       &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp RIGHT_SHIFT
+&kp GRAVE       &kp Z  &kp X               &kp C           &kp V      &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M      &kp COMMA             &kp DOT              &kp FSLH       &kp SQT
+                                           &lt 3 LEFT_GUI  &lt 2 TAB  &lt 1 SPACE                                                            &lt 1 ENTER  &lt 2 DEL  &lt 3 K_CONTEXT_MENU
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -274,6 +274,15 @@
             >;
 
             label = "adm";
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
         };
     };
 };
