@@ -18,17 +18,17 @@ layers:
   - A
   - {t: S, h: '$$mdi:apple-keyboard-control$$'}
   - {t: D, h: '$$mdi:apple-keyboard-option$$'}
-  - F
+  - {t: F, h: '$$mdi:apple-keyboard-shift$$'}
   - G
   - $$mdi:pan-left$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-right$$
   - H
-  - J
+  - {t: J, h: '$$mdi:apple-keyboard-shift$$'}
   - {t: K, h: '$$mdi:apple-keyboard-option$$'}
   - {t: L, h: '$$mdi:apple-keyboard-control$$'}
   - {t: ;, s: ':'}
-  - {t: 'Sft+$$mdi:keyboard-tab$$', h: CONTEXT MENU}
+  - {t: '''', s: '"'}
   - $$mdi:apple-keyboard-shift$$
   - Z
   - X
@@ -55,20 +55,20 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - PRINTSCREEN
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '`', s: '~'}
-  - {t: (, s: )}
-  - {t: '{', s: '}'}
-  - {t: '[', s: ']'}
-  - {t: <, s: '>'}
+  - '"'
+  - {t: (, s: <}
+  - {t: ), s: '>'}
+  - {t: '[', s: '{'}
+  - {t: ']', s: '}'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - PgDn
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '`', s: '~'}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -79,14 +79,14 @@ layers:
   - {t: ^, s: $}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - PRINTSCREEN
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: +, s: '-'}
   - {t: '*', s: /}
   - {t: '#', s: '@'}
@@ -199,3 +199,5 @@ layers:
 combos:
 - p: [28, 41]
   k: $$mdi:apple-keyboard-caps$$
+- p: [11, 12]
+  k: $$mdi:backspace-reverse-outline$$
