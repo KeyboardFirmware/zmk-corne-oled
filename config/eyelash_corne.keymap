@@ -121,13 +121,6 @@
             label = "PASTE";
         };
 
-        sel_forward: sel_word {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp RC(LEFT_ARROW) &kp LC(LS(RIGHT_ARROW))>;
-            label = "SEL_WORD";
-        };
-
         undo: undo {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
@@ -140,6 +133,20 @@
             #binding-cells = <0>;
             bindings = <&kp LC(Y)>;
             label = "REDO";
+        };
+
+        sel_fwd: sel_fwd {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(RIGHT_ARROW) &kp LC(LS(LEFT_ARROW))>;
+            label = "SEL_WORD";
+        };
+
+        sel_bck: sel_bck {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(LEFT_ARROW) &kp LC(LS(RIGHT_ARROW))>;
+            label = "SEL_WORD";
         };
     };
 
@@ -160,9 +167,9 @@
 
         navigation_symbol {
             bindings = <
-&kp GRAVE  &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &kp PRINTSCREEN                   &trans          &kp AT_SIGN      &kp CARET      &kp DOLLAR      &kp PERCENT   &kp BACKSLASH  &trans
-&trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &none                     &trans  &trans  &trans  &kp EXCLAMATION  &kp EQUAL      &kp UNDERSCORE  &kp PLUS      &kp MINUS      &trans
-&trans     &sel_forward   &cut      &copy      &paste     &none            &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
+&kp GRAVE  &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &sel_fwd                          &trans          &kp AT_SIGN      &kp CARET      &kp DOLLAR      &kp PERCENT   &kp BACKSLASH  &trans
+&trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &sel_bck                  &trans  &trans  &trans  &kp EXCLAMATION  &kp EQUAL      &kp UNDERSCORE  &kp PLUS      &kp MINUS      &trans
+&trans     &undo          &cut      &copy      &paste     &redo            &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
                                     &kp LCTRL  &kp LALT   &trans                                            &trans           &kp RALT       &kp RCTRL
             >;
 
