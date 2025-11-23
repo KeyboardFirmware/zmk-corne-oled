@@ -55,7 +55,7 @@ layers:
   - HOME
   - $$mdi:arrow-up-bold$$
   - END
-  - PRINTSCREEN
+  - '&sel_fwd'
   - {t: '$$mdi:transfer$$', type: trans}
   - '@'
   - ^
@@ -68,7 +68,7 @@ layers:
   - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&sel_bck'
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -79,11 +79,11 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&sel_forward'
+  - '&undo'
   - '&cut'
   - '&copy'
   - '&paste'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - '&redo'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - '#'
