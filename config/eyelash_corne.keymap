@@ -124,7 +124,7 @@
         sel_word: sel_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(RIGHT_ARROW) &kp LC(LS(LEFT_ARROW))>;
+            bindings = <&kp RC(LEFT_ARROW) &kp LC(LS(RIGHT_ARROW))>;
             label = "SEL_WORD";
         };
     };
