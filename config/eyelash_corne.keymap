@@ -121,11 +121,25 @@
             label = "PASTE";
         };
 
-        sel_word: sel_word {
+        sel_forward: sel_word {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp RC(LEFT_ARROW) &kp LC(LS(RIGHT_ARROW))>;
             label = "SEL_WORD";
+        };
+
+        undo: undo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Z)>;
+            label = "UNDO";
+        };
+
+        redo: redo {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(Y)>;
+            label = "REDO";
         };
     };
 
@@ -148,7 +162,7 @@
             bindings = <
 &kp GRAVE  &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &kp PRINTSCREEN                   &trans          &kp AT_SIGN      &kp CARET      &kp DOLLAR      &kp PERCENT   &kp BACKSLASH  &trans
 &trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &none                     &trans  &trans  &trans  &kp EXCLAMATION  &kp EQUAL      &kp UNDERSCORE  &kp PLUS      &kp MINUS      &trans
-&trans     &sel_word      &cut      &copy      &paste     &none            &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
+&trans     &sel_forward   &cut      &copy      &paste     &none            &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
                                     &kp LCTRL  &kp LALT   &trans                                            &trans           &kp RALT       &kp RCTRL
             >;
 
