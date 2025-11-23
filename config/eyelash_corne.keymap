@@ -37,140 +37,6 @@
 };
 
 / {
-    behaviors {
-    };
-
-    rgb_encoder: rgb_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&rgb_ug RGB_BRI>, <&rgb_ug RGB_BRD>;
-    };
-
-    scroll_encoder: scroll_encoder {
-        compatible = "zmk,behavior-sensor-rotate";
-        #sensor-binding-cells = <0>;
-        bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
-        tap-ms = <100>;
-    };
-
-    bsp_del: bsp_del {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BSP_DEL";
-        bindings = <&kp BACKSPACE>, <&kp DELETE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_RSFT|MOD_LSFT)>;
-    };
-
-    o_paren: o_paren {
-        compatible = "zmk,behavior-mod-morph";
-        label = "O_PAREN";
-        bindings = <&kp LEFT_PARENTHESIS>, <&kp LESS_THAN>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    curly: curly {
-        compatible = "zmk,behavior-mod-morph";
-        label = "CURLY";
-        bindings = <&kp LEFT_BRACE>, <&kp RIGHT_BRACE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    square: square {
-        compatible = "zmk,behavior-mod-morph";
-        label = "SQUARE";
-        bindings = <&kp LEFT_BRACKET>, <&kp RIGHT_BRACKET>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    c_paren: c_paren {
-        compatible = "zmk,behavior-mod-morph";
-        label = "C_PAREN";
-        bindings = <&kp RIGHT_PARENTHESIS>, <&kp GREATER_THAN>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    and_or: and_or {
-        compatible = "zmk,behavior-mod-morph";
-        label = "AND_OR";
-        bindings = <&kp AMPERSAND>, <&kp PIPE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    regex: regex {
-        compatible = "zmk,behavior-mod-morph";
-        label = "REGEX";
-        bindings = <&kp CARET>, <&kp DOLLAR>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    plus_minus: plus_minus {
-        compatible = "zmk,behavior-mod-morph";
-        label = "PLUS_MINUS";
-        bindings = <&kp PLUS>, <&kp MINUS>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    mult_div: mult_div {
-        compatible = "zmk,behavior-mod-morph";
-        label = "MULT_DIV";
-        bindings = <&kp ASTERISK>, <&kp SLASH>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    hash_at: hash_at {
-        compatible = "zmk,behavior-mod-morph";
-        label = "HASH_AT";
-        bindings = <&kp HASH>, <&kp AT_SIGN>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    bf_slash: bf_slash {
-        compatible = "zmk,behavior-mod-morph";
-        label = "BF_SLASH";
-        bindings = <&kp BACKSLASH>, <&kp SLASH>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    equal_hot: equal_hot {
-        compatible = "zmk,behavior-mod-morph";
-        label = "EQUAL_HOT";
-        bindings = <&kp EQUAL>, <&kp EXCLAMATION>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
-    under_percent: under_percent {
-        compatible = "zmk,behavior-mod-morph";
-        label = "UNDER_PERCENT";
-        bindings = <&kp UNDERSCORE>, <&kp PERCENT>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT)>;
-    };
-
     combos {
         compatible = "zmk,combos";
 
@@ -226,6 +92,41 @@
             key-positions = <8 9>;
             layers = <1>;
         };
+
+        admin {
+            bindings = <&mo 4>;
+            key-positions = <42 47>;
+        };
+    };
+
+    macros {
+        cut: cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(X)>;
+            label = "CUT";
+        };
+
+        copy: copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(C)>;
+            label = "COPY";
+        };
+
+        paste: paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(V)>;
+            label = "PASTE";
+        };
+
+        sel_word: sel_word {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp RC(RIGHT_ARROW) &kp LC(LS(LEFT_ARROW))>;
+            label = "SEL_WORD";
+        };
     };
 
     keymap {
@@ -234,10 +135,10 @@
         default {
             display-name = "abc";
             bindings = <
-&kp ESC         &kp Q  &kp W               &kp E           &kp R      &kp T                                 &msc SCRL_UP                     &kp Y        &kp U      &kp I                 &kp O                &kp P          &kp BACKSPACE
-&kp LEFT_SHIFT  &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &kp F      &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J      &mt RIGHT_ALT K       &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp RIGHT_SHIFT
-&kp GRAVE       &kp Z  &kp X               &kp C           &kp V      &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M      &kp COMMA             &kp DOT              &kp FSLH       &kp SQT
-                                           &lt 3 LEFT_GUI  &lt 2 TAB  &lt 1 SPACE                                                            &lt 1 ENTER  &lt 2 DEL  &lt 3 K_CONTEXT_MENU
+&kp ESC         &kp Q  &kp W               &kp E           &kp R           &kp T                                 &msc SCRL_UP                     &kp Y        &kp U                 &kp I            &kp O                &kp P          &kp BACKSPACE
+&kp TAB         &kp A  &mt LEFT_CONTROL S  &mt LEFT_ALT D  &kp F           &kp G                 &msc SCRL_LEFT  &none           &msc SCRL_RIGHT  &kp H        &kp J                 &mt RIGHT_ALT K  &mt RIGHT_CONTROL L  &kp SEMICOLON  &kp SQT
+&kp LEFT_SHIFT  &kp Z  &kp X               &kp C           &kp V           &kp B        &none                    &msc SCRL_DOWN                   &kp N        &kp M                 &kp COMMA        &kp DOT              &kp FSLH       &kp RIGHT_SHIFT
+                                           &mo 3           &lt 2 LEFT_GUI  &lt 1 SPACE                                                            &lt 1 ENTER  &lt 2 K_CONTEXT_MENU  &mo 3
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -245,10 +146,10 @@
 
         navigation_symbol {
             bindings = <
-&trans  &kp PAGE_UP      &kp HOME  &kp UP     &kp END    &none                    &trans          &kp CARET      &kp DOLLAR  &kp AT_SIGN     &kp HASH         &kp BACKSLASH  &trans
-&trans  &kp PAGE_DOWN    &kp LEFT  &kp DOWN   &kp RIGHT  &none            &trans  &trans  &trans  &kp AMPERSAND  &kp EQUAL   &kp UNDERSCORE  &kp EXCLAMATION  &kp PERCENT    &trans
-&trans  &kp PRINTSCREEN  &none     &none      &none      &none   &none            &trans          &kp PIPE       &kp PLUS    &kp MINUS       &kp ASTERISK     &kp SLASH      &trans
-                                   &kp LCTRL  &kp LALT   &trans                                   &trans         &kp RALT    &kp RCTRL
+&kp GRAVE  &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &kp PRINTSCREEN                   &trans          &kp AT_SIGN      &kp CARET      &kp DOLLAR      &kp PERCENT   &kp BACKSLASH  &trans
+&trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &none                     &trans  &trans  &trans  &kp EXCLAMATION  &kp EQUAL      &kp UNDERSCORE  &kp PLUS      &kp MINUS      &trans
+&trans     &sel_word      &cut      &copy      &paste     &none            &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
+                                    &kp LCTRL  &kp LALT   &trans                                            &trans           &kp RALT       &kp RCTRL
             >;
 
             label = "sym";
@@ -265,6 +166,17 @@
             label = "num";
         };
 
+        extra {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans            &trans                          &trans          &trans         &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans                  &trans  &trans  &trans  &trans         &trans             &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans        &trans            &trans          &trans         &trans             &trans  &trans  &trans  &trans
+                        &trans  &kp LEFT_CONTROL  &kp LEFT_ALT                                    &kp RIGHT_ALT  &kp RIGHT_CONTROL  &trans
+            >;
+
+            label = "xtr";
+        };
+
         admin {
             bindings = <
 &bootloader  &none  &none  &none   &none           &bt BT_SEL 0                  &none         &rgb_ug RGB_BRI                 &none            &none   &none  &none  &bootloader
@@ -274,15 +186,6 @@
             >;
 
             label = "adm";
-        };
-
-        layer_4 {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                                    &trans  &trans  &trans
-            >;
         };
     };
 };
