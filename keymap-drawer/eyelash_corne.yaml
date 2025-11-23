@@ -79,7 +79,7 @@ layers:
   - {t: '-', s: _}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '&sel_word'
+  - '&sel_forward'
   - '&cut'
   - '&copy'
   - '&paste'
