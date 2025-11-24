@@ -138,15 +138,15 @@
         sel_fwd: sel_fwd {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(RIGHT_ARROW) &kp LC(LS(LEFT_ARROW))>;
-            label = "SEL_WORD";
+            bindings = <&kp LC(RIGHT) &kp LS(LC(LEFT))>;
+            label = "SEL_FWD";
         };
 
-        sel_bck: sel_bck {
+        sel_back: sel_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RC(LEFT_ARROW) &kp LC(LS(RIGHT_ARROW))>;
-            label = "SEL_WORD";
+            bindings = <&kp LC(RIGHT) &kp LS(LC(LEFT))>;
+            label = "SEL_BACK";
         };
     };
 
@@ -167,10 +167,10 @@
 
         navigation_symbol {
             bindings = <
-&kp GRAVE  &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &sel_fwd                   &trans          &kp AT_SIGN      &kp CARET      &kp DOLLAR      &kp PERCENT   &kp BACKSLASH  &trans
-&trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &sel_bck           &trans  &trans  &trans  &kp EXCLAMATION  &kp EQUAL      &kp UNDERSCORE  &kp PLUS      &kp MINUS      &trans
-&trans     &undo          &cut      &copy      &paste     &redo     &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
-                                    &kp LCTRL  &kp LALT   &trans                                     &trans           &kp RALT       &kp RCTRL
+&kp GRAVE  &kp PAGE_UP    &kp HOME  &kp UP     &kp END    &sel_fwd                    &trans          &kp AT_SIGN      &kp CARET      &kp DOLLAR      &kp PERCENT   &kp BACKSLASH  &trans
+&trans     &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT  &sel_back           &trans  &trans  &trans  &kp EXCLAMATION  &kp EQUAL      &kp UNDERSCORE  &kp PLUS      &kp MINUS      &trans
+&trans     &undo          &cut      &copy      &paste     &redo      &none            &trans          &kp HASH         &kp AMPERSAND  &kp PIPE        &kp ASTERISK  &kp SLASH      &trans
+                                    &kp LCTRL  &kp LALT   &trans                                      &trans           &kp RALT       &kp RCTRL
             >;
 
             label = "sym";
