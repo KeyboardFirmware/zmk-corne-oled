@@ -145,7 +145,7 @@
         sel_back: sel_back {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LC(RIGHT) &kp LS(LC(LEFT))>;
+            bindings = <&kp LC(LEFT) &kp LS(LC(RIGHT))>;
             label = "SEL_BACK";
         };
     };
