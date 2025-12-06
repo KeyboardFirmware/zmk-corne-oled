@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - {t: symbol, h: toggle}
+  - {t: sym, h: toggle}
   - {t: adm, h: toggle}
-  - {t: misc, h: toggle}
+  - {t: func, h: toggle}
   - H
   - J
   - K
@@ -45,11 +45,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: symbol}
+  - {t: '$$mdi:keyboard-space$$', h: sym}
   - {t: '$$mdi:keyboard-return$$', h: num}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  symbol:
+  sym:
   - {t: '`', s: '~'}
   - PgUp
   - HOME
@@ -100,26 +100,11 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '1', s: '!'}
-  - {t: '2', s: '@'}
-  - {t: '3', s: '#'}
-  - {t: '4', s: $}
-  - {t: '5', s: '%'}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '6', s: ^}
-  - {t: '7', s: '&'}
-  - {t: '8', s: '*'}
-  - {t: '9', s: (}
-  - {t: '0', s: )}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - Sft+!
   - Sft+@
   - Sft+#
   - Sft+$
   - Sft+%
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - Sft+^
   - Sft+&
@@ -128,14 +113,29 @@ layers:
   - Sft+)
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '1', s: '!'}
+  - {t: '2', s: '@'}
+  - {t: '3', s: '#'}
+  - {t: '4', s: $}
+  - {t: '5', s: '%'}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '6', s: ^}
+  - {t: '7', s: '&'}
+  - {t: '8', s: '*'}
+  - {t: '9', s: (}
+  - {t: '0', s: )}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   - {t: \, s: '|'}
   - '|'
-  - _
-  - {t: '=', s: +}
   - {t: '`', s: '~'}
+  - Sft+~
+  - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - '~'
+  - Sft+_
   - +
   - {t: '-', s: _}
   - '*'
@@ -147,20 +147,20 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  misc:
+  func:
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:transfer$$', type: trans}
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
@@ -250,27 +250,27 @@ combos:
   k: $$mdi:apple-keyboard-caps$$
 - p: [16, 17]
   k: (
-  l: [symbol]
+  l: [sym]
 - p: [23, 24]
   k: )
-  l: [symbol]
+  l: [sym]
 - p: [15, 16]
   k: <
-  l: [symbol]
+  l: [sym]
 - p: [24, 25]
   k: '>'
-  l: [symbol]
+  l: [sym]
 - p: [2, 3]
   k: {t: '[', s: '{'}
-  l: [symbol]
+  l: [sym]
 - p: [9, 10]
   k: {t: ']', s: '}'}
-  l: [symbol]
+  l: [sym]
 - p: [3, 4]
   k: '{'
-  l: [symbol]
+  l: [sym]
 - p: [8, 9]
   k: '}'
-  l: [symbol]
+  l: [sym]
 - p: [44, 45]
   k: adm
