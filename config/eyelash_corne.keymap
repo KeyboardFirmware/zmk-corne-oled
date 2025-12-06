@@ -41,7 +41,7 @@
 
         b {
             bindings = <&kp CAPS>;
-            key-positions = <13 27>;
+            key-positions = <28 41>;
         };
 
         op {
@@ -93,7 +93,7 @@
         };
 
         admin {
-            bindings = <&mo 4>;
+            bindings = <&mo 3>;
             key-positions = <44 45>;
         };
     };
