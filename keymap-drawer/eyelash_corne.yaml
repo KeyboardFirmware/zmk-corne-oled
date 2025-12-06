@@ -22,7 +22,7 @@ layers:
   - G
   - {t: sym, h: toggle}
   - {t: adm, h: toggle}
-  - {t: func, h: toggle}
+  - {t: fun, h: toggle}
   - H
   - J
   - K
@@ -100,17 +100,17 @@ layers:
   - {t: '$$mdi:transfer$$', type: trans}
   num:
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+!
-  - Sft+@
-  - Sft+#
-  - Sft+$
-  - Sft+%
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+^
-  - Sft+&
-  - Sft+*
-  - Sft+(
-  - Sft+)
+  - ^
+  - '&'
+  - '*'
+  - (
+  - )
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '1', s: '!'}
@@ -131,11 +131,11 @@ layers:
   - {t: \, s: '|'}
   - '|'
   - {t: '`', s: '~'}
-  - Sft+~
+  - '~'
   - {t: '=', s: +}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
-  - Sft+_
+  - _
   - +
   - {t: '-', s: _}
   - '*'
@@ -147,7 +147,7 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-  func:
+  fun:
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
