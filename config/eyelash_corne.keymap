@@ -176,29 +176,29 @@
                                     &trans    &trans     &trans                                    &trans  &trans  &trans
             >;
 
-            label = "symbol";
+            label = "sym";
         };
 
-        number_func {
+        number {
             bindings = <
-&trans  &kp N1         &kp N2      &kp N3          &kp N4        &kp N5                          &trans          &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
-&trans  &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)   &kp LS(DLLR)  &kp LS(PRCNT)           &trans  &trans  &trans  &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
-&trans  &kp BACKSLASH  &kp PIPE    &kp UNDERSCORE  &kp EQUAL     &kp GRAVE      &none            &trans          &kp TILDE      &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &trans
-                                   &trans          &trans        &trans                                          &trans         &trans        &trans
+&trans  &kp LS(EXCL)   &kp LS(AT)  &kp LS(POUND)  &kp LS(DLLR)   &kp LS(PRCNT)                   &trans          &kp LS(CARET)  &kp LS(AMPS)  &kp LS(STAR)  &kp LS(LPAR)  &kp LS(RPAR)  &trans
+&trans  &kp N1         &kp N2      &kp N3         &kp N4         &kp N5                  &trans  &trans  &trans  &kp N6         &kp N7        &kp N8        &kp N9        &kp N0        &trans
+&trans  &kp BACKSLASH  &kp PIPE    &kp GRAVE      &kp LS(TILDE)  &kp EQUAL      &none            &trans          &kp LS(UNDER)  &kp PLUS      &kp MINUS     &kp ASTERISK  &kp SLASH     &trans
+                                   &trans         &trans         &trans                                          &trans         &trans        &trans
             >;
 
             label = "num";
         };
 
-        miscellaneous {
+        function {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6                    &trans          &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans   &trans   &trans
                         &trans  &trans  &trans                                    &trans  &trans  &trans
             >;
 
-            label = "misc";
+            label = "func";
         };
 
         admin {
