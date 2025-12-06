@@ -93,7 +93,7 @@
         };
 
         admin {
-            bindings = <&mo 3>;
+            bindings = <&mo 4>;
             key-positions = <44 45>;
         };
     };
@@ -157,10 +157,10 @@
         compatible = "zmk,keymap";
 
         default {
-            display-name = "abc";
+            display-name = "abcd";
             bindings = <
 &kp ESC         &kp Q  &kp W  &kp E             &kp R         &kp T                        &to 0         &kp Y        &kp U          &kp I              &kp O    &kp P          &back_del
-&kp TAB         &kp A  &kp S  &kp D             &kp F         &kp G                 &to 1  &none  &to 3  &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON  &kp SQT
+&kp TAB         &kp A  &kp S  &kp D             &kp F         &kp G                 &to 1  &to 4  &to 3  &kp H        &kp J          &kp K              &kp L    &kp SEMICOLON  &kp SQT
 &kp LEFT_SHIFT  &kp Z  &kp X  &kp C             &kp V         &kp B        &none           &to 2         &kp N        &kp M          &kp COMMA          &kp DOT  &kp FSLH       &kp RIGHT_SHIFT
                               &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
@@ -176,7 +176,7 @@
                                     &trans    &trans     &trans                                    &trans  &trans  &trans
             >;
 
-            label = "sym";
+            label = "symbol";
         };
 
         number_func {
@@ -188,6 +188,17 @@
             >;
 
             label = "num";
+        };
+
+        miscellaneous {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans            &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                                    &trans  &trans  &trans
+            >;
+
+            label = "misc";
         };
 
         admin {
