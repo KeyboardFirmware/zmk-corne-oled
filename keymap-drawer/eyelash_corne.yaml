@@ -1,13 +1,13 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  abc:
+  abcd:
   - $$mdi:keyboard-esc$$
   - Q
   - W
   - E
   - R
   - T
-  - {t: abc, h: toggle}
+  - {t: abcd, h: toggle}
   - Y
   - U
   - I
@@ -20,9 +20,9 @@ layers:
   - D
   - F
   - G
-  - {t: sym, h: toggle}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: symbol, h: toggle}
   - {t: adm, h: toggle}
+  - {t: misc, h: toggle}
   - H
   - J
   - K
@@ -45,11 +45,11 @@ layers:
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - $$mdi:apple-keyboard-option$$
-  - {t: '$$mdi:keyboard-space$$', h: sym}
+  - {t: '$$mdi:keyboard-space$$', h: symbol}
   - {t: '$$mdi:keyboard-return$$', h: num}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
-  sym:
+  symbol:
   - {t: '`', s: '~'}
   - PgUp
   - HOME
@@ -147,6 +147,55 @@ layers:
   - {type: held}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
+  misc:
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
+  - {t: '$$mdi:transfer$$', type: trans}
   adm:
   - $$mdi:progress-download$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -201,27 +250,27 @@ combos:
   k: $$mdi:apple-keyboard-caps$$
 - p: [16, 17]
   k: (
-  l: [sym]
+  l: [symbol]
 - p: [23, 24]
   k: )
-  l: [sym]
+  l: [symbol]
 - p: [15, 16]
   k: <
-  l: [sym]
+  l: [symbol]
 - p: [24, 25]
   k: '>'
-  l: [sym]
+  l: [symbol]
 - p: [2, 3]
   k: {t: '[', s: '{'}
-  l: [sym]
+  l: [symbol]
 - p: [9, 10]
   k: {t: ']', s: '}'}
-  l: [sym]
+  l: [symbol]
 - p: [3, 4]
   k: '{'
-  l: [sym]
+  l: [symbol]
 - p: [8, 9]
   k: '}'
-  l: [sym]
+  l: [symbol]
 - p: [44, 45]
   k: adm
