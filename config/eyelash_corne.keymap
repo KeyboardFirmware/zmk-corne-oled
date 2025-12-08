@@ -169,10 +169,10 @@
 
         navigation_symbol {
             bindings = <
-&trans  &kp PAGE_UP    &kp HOME  &kp UP    &kp END    &select                   &trans          &none   &none   &none   &none  &none  &trans
-&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT  &none             &trans  &trans  &trans  &none   &none   &none   &none  &none  &none
-&trans  &undo          &cut      &copy     &paste     &redo    &none            &trans          &none   &none   &none   &none  &none  &trans
-                                 &trans    &trans     &trans                                    &trans  &trans  &trans
+&trans  &kp PAGE_UP    &kp HOME  &kp UP            &kp END       &select                       &trans          &none        &none          &none              &none  &none  &trans
+&trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN          &kp RIGHT     &none                 &trans  &trans  &trans  &none        &none          &none              &none  &none  &none
+&trans  &undo          &cut      &copy             &paste        &redo        &none            &trans          &none        &none          &none              &none  &none  &trans
+                                 &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                   &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             label = "sym";
@@ -180,10 +180,10 @@
 
         number {
             bindings = <
-&trans  &kp CARET       &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &trans          &kp N6          &kp N7    &kp N8     &kp N9        &kp N0     &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND     &kp DOLLAR            &kp PERCENT                    &trans  &trans  &trans  &kp N1          &kp N2    &kp N3     &kp N4        &kp N5     &none
-&trans  &kp BACKSLASH    &kp PIPE      &kp GRAVE     &kp TILDE             &kp EQUAL              &none           &trans          &kp UNDERSCORE  &kp PLUS  &kp MINUS  &kp ASTERISK  &kp SLASH  &trans
-                                       &trans        &trans                &trans                                                 &trans          &trans    &trans
+&trans  &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &trans          &kp N6          &kp N7    &kp N8     &kp N9             &kp N0     &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND         &kp DOLLAR            &kp PERCENT                    &trans  &trans  &trans  &kp N1          &kp N2    &kp N3     &kp N4             &kp N5     &none
+&trans  &kp BACKSLASH    &kp PIPE      &kp GRAVE         &kp TILDE             &kp EQUAL              &none           &trans          &kp UNDERSCORE  &kp PLUS  &kp MINUS  &kp ASTERISK       &kp SLASH  &trans
+                                       &kp LEFT_CONTROL  &kp LEFT_ALT          &lt 1 SPACE                                            &lt 2 ENTER     &kp RIGHT_ALT        &kp RIGHT_CONTROL
             >;
 
             label = "num";
@@ -191,10 +191,10 @@
 
         function {
             bindings = <
-&trans  &none  &none  &none   &none   &none                     &trans          &none   &kp F9  &kp F10  &kp F11  &kp F12  &trans
-&trans  &none  &none  &none   &none   &none             &trans  &trans  &trans  &none   &kp F5  &kp F6   &kp F7   &kp F8   &none
-&trans  &none  &none  &none   &none   &none    &trans           &trans          &none   &kp F1  &kp F2   &kp F3   &kp F4   &trans
-                      &trans  &trans  &trans                                    &trans  &trans  &trans
+&trans  &none  &none  &none             &none         &none                         &trans          &none       &kp F9         &kp F10            &kp F11  &kp F12  &trans
+&trans  &none  &none  &none             &none         &none                 &trans  &trans  &trans  &none       &kp F5         &kp F6             &kp F7   &kp F8   &none
+&trans  &none  &none  &none             &none         &none        &trans           &trans          &none       &kp F1         &kp F2             &kp F3   &kp F4   &trans
+                      &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                  &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             label = "fun";
@@ -202,10 +202,10 @@
 
         admin {
             bindings = <
-&bootloader  &none  &none  &none   &none           &bt BT_SEL 0                   &trans          &rgb_ug RGB_BRI                 &none            &none   &none  &none  &bootloader
-&none        &none  &none  &none   &none           &bt BT_SEL 1           &trans  &trans  &trans  &rgb_ug RGB_BRD                 &none            &none   &none  &none  &none
-&none        &none  &none  &none   &bt BT_CLR_ALL  &bt BT_SEL 2  &none            &trans          &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &none   &none  &none  &none
-                           &trans  &trans          &trans                                         &trans                          &trans           &trans
+&bootloader  &none  &none  &none             &none           &bt BT_SEL 0                   &trans          &rgb_ug RGB_BRI                 &none            &none              &none  &none  &bootloader
+&none        &none  &none  &none             &none           &bt BT_SEL 1           &trans  &trans  &trans  &rgb_ug RGB_BRD                 &none            &none              &none  &none  &none
+&none        &none  &none  &none             &bt BT_CLR_ALL  &bt BT_SEL 2  &none            &trans          &rgb_ug RGB_COLOR_HSB(0,0,100)  &rgb_ug RGB_TOG  &none              &none  &none  &none
+                           &kp LEFT_CONTROL  &kp LEFT_ALT    &lt 1 SPACE                                    &lt 2 ENTER                     &kp RIGHT_ALT    &kp RIGHT_CONTROL
             >;
 
             label = "adm";
