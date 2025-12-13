@@ -147,6 +147,7 @@
             compatible = "zmk,behavior-mod-morph";
             label = "BACK_DEL";
             bindings = <&kp BACKSPACE>, <&kp DELETE>;
+
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
@@ -180,10 +181,10 @@
 
         number {
             bindings = <
-&trans  &kp CARET       &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                  &trans          &kp N6          &kp N7    &kp N8     &kp N9             &kp N0     &trans
-&trans  &kp EXCLAMATION  &kp AT_SIGN   &kp POUND         &kp DOLLAR            &kp PERCENT                    &trans  &trans  &trans  &kp N1          &kp N2    &kp N3     &kp N4             &kp N5     &none
-&trans  &kp BACKSLASH    &kp PIPE      &kp GRAVE         &kp TILDE             &kp EQUAL              &none           &trans          &kp UNDERSCORE  &kp PLUS  &kp MINUS  &kp ASTERISK       &kp SLASH  &trans
-                                       &kp LEFT_CONTROL  &kp LEFT_ALT          &lt 1 SPACE                                            &lt 2 ENTER     &kp RIGHT_ALT        &kp RIGHT_CONTROL
+&trans  &kp CARET        &kp AMPERSAND  &kp ASTERISK      &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS                   &trans          &kp N6          &kp N7         &kp N8             &kp N9        &kp N0     &trans
+&trans  &kp EXCLAMATION  &kp AT_SIGN    &kp POUND         &kp DOLLAR            &kp PERCENT                     &trans  &trans  &trans  &kp N1          &kp N2         &kp N3             &kp N4        &kp N5     &none
+&trans  &kp BACKSLASH    &kp PIPE       &kp GRAVE         &kp TILDE             &kp EQUAL              &none            &trans          &kp UNDERSCORE  &kp PLUS       &kp MINUS          &kp ASTERISK  &kp SLASH  &trans
+                                        &kp LEFT_CONTROL  &kp LEFT_ALT          &lt 1 SPACE                                             &lt 2 ENTER     &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             label = "num";
@@ -191,10 +192,10 @@
 
         function {
             bindings = <
-&trans  &none  &none  &none             &none         &none                         &trans          &none       &kp F9         &kp F10            &kp F11  &kp F12  &trans
-&trans  &none  &none  &none             &none         &none                 &trans  &trans  &trans  &none       &kp F5         &kp F6             &kp F7   &kp F8   &none
-&trans  &none  &none  &none             &none         &none        &trans           &trans          &none       &kp F1         &kp F2             &kp F3   &kp F4   &trans
-                      &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                  &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
+&kp F1  &kp F2  &kp F3  &kp F4            &kp F5        &kp F6                         &trans          &kp F7       &kp F8         &kp F9             &kp F10  &kp F11  &kp F12
+&trans  &none   &none   &none             &none         &none                  &trans  &trans  &trans  &none        &none          &none              &none    &none    &none
+&trans  &none   &none   &none             &none         &none        &trans            &trans          &none        &none          &none              &none    &none    &trans
+                        &kp LEFT_CONTROL  &kp LEFT_ALT  &lt 1 SPACE                                    &lt 2 ENTER  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             label = "fun";
